@@ -1,0 +1,254 @@
+Day Eleven Reflection – STP (Spanning Tree Protocol) Concepts
+
+On day eleven, I learnt about Spanning Tree Protocol (STP), a network protocol designed to prevent loops in switched networks while maintaining redundancy. The lesson focused on understanding the purpose of STP, how it operates, and the evolution of STP technologies used in modern networks.
+
+5.1 Purpose of STP
+1. Redundancy in Layer 2 Switched Networks
+
+I learnt that network redundancy involves creating multiple paths between switches to improve reliability and availability. I understood that:
+
+Redundant links provide backup paths if a connection fails
+Redundancy increases network uptime
+Multiple paths can unintentionally create loops
+
+This topic helped me understand the balance between network reliability and stability.
+
+2. Spanning Tree Protocol (STP)
+
+I learnt that STP is a protocol designed to prevent switching loops in Layer 2 networks. I understood that:
+
+STP identifies redundant paths
+It blocks unnecessary links while keeping them available as backups
+It ensures only one active path exists between network segments
+
+This helped me understand why STP is essential in switched networks.
+
+3. STP Recalculation
+
+I learnt how STP automatically recalculates network paths when a topology change occurs, such as:
+
+A switch failure
+A link failure
+A new switch joining the network
+
+I understood that STP adapts to changes to maintain a loop-free network.
+
+4. Issues with Redundant Switch Links
+
+I learnt that while redundancy improves reliability, it can also create problems if loops are allowed. These problems include:
+
+Duplicate frames
+Broadcast storms
+MAC address table instability
+
+This showed me why loop prevention mechanisms are necessary.
+
+5. Layer 2 Loops
+
+I studied how Layer 2 loops occur when multiple active paths exist between switches. I understood that loops can cause:
+
+Endless frame circulation
+Network congestion
+Communication failures
+
+This topic highlighted one of the biggest threats to switched networks.
+
+6. Broadcast Storm
+
+I learnt that a broadcast storm occurs when broadcast frames continuously circulate within a network loop. I understood that:
+
+Broadcast traffic multiplies rapidly
+Network resources become overwhelmed
+Communication can become impossible
+
+This helped me understand the serious impact of switching loops.
+
+7. The Spanning Tree Algorithm
+
+I learnt how the Spanning Tree Algorithm determines the best path through a network and blocks redundant links. I understood that:
+
+The algorithm creates a loop-free topology
+Backup paths remain available if needed
+Network stability is maintained
+
+This introduced me to the decision-making process behind STP.
+
+8. Video – Observe STP Operation
+
+I watched a video demonstrating how STP operates in a switched network. The demonstration helped me visualize:
+
+Loop prevention
+Port selection
+Path calculations
+Topology changes
+
+This strengthened my understanding of STP behaviour.
+
+9. Packet Tracer – Investigate STP Loop Prevention
+
+I completed a Packet Tracer activity where I observed how STP prevents loops. During the exercise, I:
+
+Examined redundant links
+Observed blocked ports
+Verified loop prevention mechanisms
+
+This practical activity reinforced the concepts learnt.
+
+10. Check Your Understanding – Purpose of STP
+
+I completed an assessment activity that helped me evaluate my understanding of STP fundamentals and loop prevention.
+
+5.2 STP Operations
+11. Steps to a Loop-Free Topology
+
+I learnt the sequence of operations STP uses to create a loop-free network. This process includes:
+
+Electing a root bridge
+Selecting root ports
+Selecting designated ports
+Blocking unnecessary paths
+
+This gave me a structured understanding of STP operations.
+
+12. Elect the Root Bridge
+
+I learnt that the root bridge serves as the central reference point for all STP calculations. I understood that:
+
+Only one root bridge exists per STP topology
+The switch with the lowest Bridge ID becomes the root bridge
+
+This introduced me to the foundation of STP decision-making.
+
+13. Impact of Default BIDs
+
+I learnt how default Bridge IDs (BIDs) influence root bridge elections. I understood that:
+
+Priority values affect root bridge selection
+MAC addresses are used when priorities are equal
+
+This helped me understand how administrators can influence STP elections.
+
+14. Determine the Root Path Cost
+
+I learnt how switches calculate the cost of reaching the root bridge. I understood that:
+
+Lower path costs are preferred
+Link speed influences path cost calculations
+
+This showed me how STP selects the most efficient route.
+
+15. Elect the Root Ports
+
+I learnt that each non-root switch selects one root port, which provides the best path to the root bridge.
+
+This helped me understand how traffic is directed through the network.
+
+16. Elect Designated Ports
+
+I learnt that designated ports are selected to forward traffic for each network segment. I understood that:
+
+Only one designated port exists per segment
+Designated ports remain in a forwarding state
+
+This topic explained how STP organizes traffic flow.
+
+17. Elect Alternate (Blocked) Ports
+
+I learnt that STP blocks redundant ports to prevent loops while keeping them available as backup paths.
+
+This demonstrated how STP maintains redundancy without creating instability.
+
+18. Elect a Root Port from Multiple Equal-Cost Paths
+
+I learnt how STP chooses a root port when multiple paths have the same cost by using additional tie-breaking rules such as Bridge IDs and Port IDs.
+
+This improved my understanding of STP decision processes.
+
+19. STP Timers and Port States
+
+I learnt about STP timers and the different port states used during topology convergence. These states help prevent loops during network changes.
+
+20. Operational Details of Each Port State
+
+I studied the behaviour of ports in different STP states, including:
+
+Blocking
+Listening
+Learning
+Forwarding
+Disabled
+
+This helped me understand how switches transition safely between states.
+
+21. Per-VLAN Spanning Tree (PVST)
+
+I learnt that PVST allows a separate spanning tree instance for each VLAN. I understood that:
+
+Each VLAN can have its own root bridge
+Traffic management becomes more flexible
+Network optimisation improves
+
+This introduced me to VLAN-specific STP implementations.
+
+22. Check Your Understanding – STP Operations
+
+I completed an assessment activity that strengthened my understanding of STP calculations, port roles, and topology formation.
+
+5.3 Evolution of STP
+23. Different Versions of STP
+
+I learnt that several versions of STP have been developed to improve performance and convergence times. These versions include:
+
+STP (IEEE 802.1D)
+PVST+
+Rapid STP (RSTP)
+Rapid PVST+
+Multiple STP (MST)
+
+This helped me understand the evolution of switching technologies.
+
+24. RSTP Concepts
+
+I learnt about Rapid Spanning Tree Protocol (RSTP), which improves network convergence speed compared to traditional STP. I understood that:
+
+RSTP reacts faster to network changes
+Downtime is reduced
+Network recovery is improved
+
+This introduced me to modern STP implementations.
+
+25. RSTP Port States and Port Roles
+
+I studied how RSTP simplifies port states and introduces additional port roles for faster convergence.
+
+This helped me compare RSTP with traditional STP.
+
+26. PortFast and BPDU Guard
+
+I learnt about two important STP security and optimisation features:
+
+PortFast
+
+Allows end-device ports to enter forwarding mode immediately
+Reduces startup delays for connected devices
+
+BPDU Guard
+
+Protects the network by shutting down ports that receive unexpected BPDUs
+Helps prevent accidental or malicious topology changes
+
+This topic highlighted best practices for switch security and performance.
+
+27. Alternatives to STP
+
+I learnt about alternative technologies and approaches used to improve redundancy and network performance beyond traditional STP implementations.
+
+This gave me insight into modern network design strategies.
+
+28. Check Your Understanding – Evolution of STP
+
+Finally, I completed an assessment activity to test my understanding of STP evolution, RSTP features, and modern switching technologies.
+
+Summary of Day Eleven
+
+Day eleven gave me a comprehensive understanding of how Spanning Tree Protocol prevents network loops, manages redundant links, and ensures stable communication in switched networks. Through practical activities, videos, and Packet Tracer simulations, I learnt how STP elects root bridges, selects forwarding paths, blocks redundant links, and adapts to network changes. I also gained knowledge of modern STP enhancements such as RSTP, PortFast, and BPDU Guard, which are widely used in enterprise networking environments.
