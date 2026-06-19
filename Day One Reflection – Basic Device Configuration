@@ -1,0 +1,57 @@
+On day one, I learnt how to perform basic device configuration and understood the fundamental concepts involved in setting up and managing a network switch. The session introduced both theoretical and practical skills that are essential in networking.
+
+Topics Covered and What I Learnt
+1. Switch Boot Sequence
+
+I learnt how a switch starts up when powered on. I understood the different stages involved during the booting process, including:
+
+Power-On Self-Test (POST)
+Loading the boot loader
+Loading the IOS operating system
+Reading the startup configuration file
+
+This helped me understand how a switch becomes operational and how it prepares itself to forward network traffic.
+
+2. The Boot System Command
+
+I learnt how the boot system command is used to specify which IOS image a switch or router should load during startup. I understood its importance in controlling the boot process and managing different IOS versions stored in memory.
+
+3. Switch LED Indicators
+
+I studied the meaning of different LED lights found on a switch. I learnt how LED indicators help in identifying:
+
+Power status
+Port activity
+Connection status
+Errors and faults
+
+This knowledge is important for troubleshooting physical and connectivity problems in a network.
+
+4. Recovering from a System Crash
+
+I learnt the basic procedures used when a switch experiences a system crash or fails to boot properly. This included understanding recovery modes, troubleshooting startup issues, and restoring the IOS or configuration files when necessary.
+
+5. Switch Management Access
+
+I learnt how administrators access and manage a switch remotely and locally. I understood methods such as:
+
+Console access
+Telnet
+SSH
+
+I also learnt the importance of securing management access to prevent unauthorized users from controlling the network device.
+
+6. Switch SVI Configuration Example
+
+I learnt how to configure a Switch Virtual Interface (SVI) to assign an IP address to a switch for remote management purposes. This practical example showed me how switches can communicate on a network and be managed remotely.
+
+7. Lab – Basic Switch Configuration
+
+Finally, I participated in a practical lab where I applied the concepts learnt during the lesson. In the lab, I configured a basic switch setup, including:
+
+Setting the hostname
+Configuring passwords
+Assigning IP addresses
+Saving configurations
+
+The lab helped me gain hands-on experience and improved my confidence in basic switch configuration and management.
