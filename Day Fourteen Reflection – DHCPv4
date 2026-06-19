@@ -1,0 +1,206 @@
+On day fourteen, I learnt about Dynamic Host Configuration Protocol version 4 (DHCPv4), a network service that automatically assigns IP addresses and other network settings to devices. The lesson focused on how DHCP works, how to configure a Cisco IOS router as a DHCP server, how routers can act as DHCP clients, and how to verify and troubleshoot DHCP operations.
+
+DHCP is an essential networking service because it automates IP address management, reduces configuration errors, and simplifies network administration.
+
+7.1 DHCPv4 Concepts
+1. DHCPv4 Server and Client
+
+I learnt that DHCP operates using a client-server model. I understood that:
+
+The DHCP server assigns IP configuration information.
+The DHCP client requests network settings.
+Devices can automatically obtain an IP address without manual configuration.
+
+This helped me understand how modern networks efficiently manage large numbers of devices.
+
+2. DHCPv4 Operation
+
+I learnt how DHCPv4 operates to provide network configuration information to clients. The server provides:
+
+IP addresses
+Subnet masks
+Default gateways
+DNS server addresses
+
+This showed me how DHCP simplifies network connectivity for users.
+
+3. Steps to Obtain a Lease
+
+I learnt the four-step DHCP process used when a device requests an IP address:
+
+Discover
+
+The client broadcasts a request looking for a DHCP server.
+
+Offer
+
+The DHCP server offers an available IP address.
+
+Request
+
+The client requests the offered address.
+
+Acknowledge
+
+The server confirms the assignment and issues a lease.
+
+I understood that this process is commonly referred to as the DORA process.
+
+4. Steps to Renew a Lease
+
+I learnt how clients renew DHCP leases before they expire. I understood that:
+
+Clients periodically request lease renewal.
+The DHCP server can extend the lease period.
+This ensures uninterrupted network connectivity.
+
+This topic helped me understand how DHCP maintains stable IP assignments.
+
+7.2 Configure a Cisco IOS DHCPv4 Server
+5. Cisco IOS DHCPv4 Server
+
+I learnt that Cisco routers can function as DHCP servers and automatically assign addresses to devices on a network.
+
+This introduced me to using routers as network service providers.
+
+6. Steps to Configure a Cisco IOS DHCPv4 Server
+
+I learnt the configuration process required to create a DHCP pool, including:
+
+Excluding reserved addresses
+Creating a DHCP pool
+Assigning network information
+Configuring default gateways
+Configuring DNS servers
+
+This gave me a structured approach to DHCP server deployment.
+
+7. Configuration Example
+
+I studied practical examples showing how a Cisco router is configured as a DHCP server. I observed:
+
+DHCP pool creation
+Address allocation settings
+Network parameter assignments
+
+This helped me connect theoretical concepts to real configurations.
+
+8. DHCPv4 Verification Commands
+
+I learnt how to verify DHCP configurations using Cisco IOS commands. These commands helped me:
+
+View DHCP bindings
+Verify address assignments
+Check DHCP pool information
+Monitor DHCP operations
+
+This improved my network verification skills.
+
+9. Verify DHCPv4 is Operational
+
+I practised checking whether DHCP services were functioning correctly by:
+
+Confirming address allocation
+Testing client connectivity
+Verifying lease information
+
+This helped me understand how to validate network services.
+
+10. Syntax Checker – Configure DHCPv4
+
+I used a syntax checker to practise DHCP configuration commands. This activity improved my:
+
+Command accuracy
+Understanding of configuration syntax
+Confidence in router administration
+11. Disable the Cisco IOS DHCPv4 Server
+
+I learnt how DHCP services can be disabled when no longer required or when troubleshooting network issues.
+
+This helped me understand DHCP service management.
+
+12. DHCPv4 Relay
+
+I learnt that DHCP relay allows DHCP requests to cross network boundaries. I understood that:
+
+DHCP broadcasts normally remain within a local network.
+Relay agents forward requests to remote DHCP servers.
+DHCP services can support multiple networks from a central location.
+
+This introduced me to scalable DHCP deployment.
+
+13. Other Service Broadcasts Relayed
+
+I learnt that relay agents can also forward other network service broadcasts when required.
+
+This expanded my understanding of network service integration.
+
+14. Packet Tracer – Configure DHCPv4
+
+I completed a Packet Tracer activity where I configured a Cisco router as a DHCPv4 server. During the exercise, I:
+
+Created DHCP pools
+Configured network parameters
+Assigned addresses automatically
+Verified successful client connectivity
+
+This practical activity strengthened my hands-on networking skills.
+
+7.3 Configure a DHCPv4 Client
+15. Cisco Router as a DHCPv4 Client
+
+I learnt that Cisco routers can also operate as DHCP clients and automatically receive IP configuration from a DHCP server.
+
+This showed me that routers can function as both service providers and service consumers.
+
+16. Configuration Example
+
+I studied examples demonstrating how to configure a router interface to obtain an IP address dynamically through DHCP.
+
+This helped me understand dynamic interface configuration.
+
+17. Home Router as a DHCPv4 Client
+
+I learnt how home routers commonly receive public IP addresses from Internet Service Providers (ISPs) using DHCP.
+
+This connected classroom concepts to real-world home networking environments.
+
+18. Syntax Checker – Configure a Cisco Router as DHCP Client
+
+I practised configuring router interfaces as DHCP clients using a syntax checker. This improved my command-line skills and configuration accuracy.
+
+7.4 Module Practice and Quiz
+19. Packet Tracer – Implement DHCPv4
+
+I completed a Packet Tracer implementation exercise where I configured and tested DHCP services within a network environment.
+
+This helped reinforce all the DHCP concepts covered in the module.
+
+20. Lab – Implement DHCPv4
+
+I completed a practical lab where I:
+
+Configured DHCP pools
+Assigned network settings
+Tested automatic address allocation
+Verified successful communication
+
+The lab provided valuable hands-on experience with DHCP deployment.
+
+21. What Did I Learn in This Module?
+
+Throughout the module, I learnt:
+
+How DHCP automates IP address assignment
+The DHCP lease process (DORA)
+How to configure Cisco IOS routers as DHCP servers
+How to configure routers as DHCP clients
+How DHCP relay supports multiple networks
+How to verify and troubleshoot DHCP operations
+22. Module Quiz – DHCPv4
+
+Finally, I completed the module quiz, which tested my understanding of DHCP concepts, configuration procedures, verification techniques, and practical implementation skills.
+
+Summary of Day Fourteen
+
+Day fourteen provided me with a solid understanding of DHCPv4 and its role in automating network configuration. I learnt how DHCP clients and servers communicate, how IP addresses are leased and renewed, how to configure Cisco routers as DHCP servers and clients, and how to verify DHCP functionality. Through Packet Tracer activities, syntax checkers, labs, and quizzes, I gained practical experience that strengthened my ability to deploy and manage DHCP services in real-world network environments.
