@@ -1,0 +1,55 @@
+Upon completing the Red Team Fundamentals room, I gained a foundational understanding of offensive security operations and the role of a red team within an organisation's security programme.
+
+Topics Covered
+Understanding Red Teaming
+Learned the purpose and objectives of red team operations.
+Understood the differences between Red Teams, Blue Teams, and Purple Teams.
+Explored how red teams simulate real-world adversaries to evaluate an organisation's security posture.
+
+Cyber Kill Chain and Attack Lifecycle
+Studied the stages of a cyber attack from reconnaissance to actions on objectives.
+Learned how attackers plan and execute operations against target environments.
+Understood how each phase contributes to a successful compromise.
+Adversary Emulation
+Learned the concept of emulating real-world threat actors.
+Explored how red teams replicate attacker tactics, techniques, and procedures (TTPs).
+Understood the importance of realistic attack simulations.
+
+Reconnaissance Techniques
+Gained knowledge of passive and active reconnaissance.
+Learned how attackers gather information about target organisations.
+Identified common sources of publicly available intelligence.
+
+Initial Access Concepts
+Explored various methods attackers use to gain access to systems.
+Learned how vulnerabilities, misconfigurations, and social engineering can be leveraged during an engagement.
+Privilege Escalation Fundamentals
+Developed an understanding of how attackers move from limited access to elevated privileges.
+Learned common privilege escalation concepts and attack paths.
+
+Lateral Movement
+Learned how attackers navigate through compromised environments.
+Understood the importance of segmentation and access controls in preventing lateral movement.
+
+Operational Security (OPSEC)
+Explored the importance of maintaining stealth during red team engagements.
+Learned techniques used to minimise detection by security monitoring tools.
+
+Reporting and Documentation
+Understood the importance of documenting findings and attack paths.
+Learned how red team results help organisations improve their defensive capabilities.
+
+Skills Demonstrated
+Red Team Methodology
+Cyber Attack Lifecycle Analysis
+Reconnaissance Techniques
+Adversary Emulation Concepts
+Initial Access Methodologies
+Privilege Escalation Fundamentals
+Lateral Movement Concepts
+Operational Security Awareness
+Security Assessment Documentation
+Threat-Informed Security Testing
+Key Takeaways
+
+Completing Red Team Fundamentals strengthened my understanding of how real-world attackers operate and how offensive security assessments are conducted. The room provided valuable insight into attacker methodologies, the importance of structured engagements, and the role red teams play in helping organisations identify and address security weaknesses before they can be exploited by malicious actors.
