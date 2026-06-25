@@ -1,0 +1,66 @@
+Upon completing the Red Team Engagements room, I developed a deeper understanding of how professional red team operations are planned, executed, and managed within an organisation. The room provided insight into the strategic and operational aspects of conducting authorised offensive security assessments.
+
+Topics Covered
+Red Team Engagement Planning
+Learned the importance of defining engagement objectives and scope.
+Understood how red team activities align with organisational security goals.
+Explored the planning process required before commencing an operation.
+
+Rules of Engagement (ROE)
+Learned how Rules of Engagement establish boundaries and expectations.
+Understood the significance of obtaining proper authorisation before conducting security assessments.
+Explored restrictions and limitations commonly included in red team engagements.
+Engagement Documentation
+Gained experience understanding the documentation required throughout an engagement.
+Learned how objectives, timelines, and communication channels are documented.
+Explored the role of engagement documentation in maintaining accountability and professionalism.
+
+Threat Intelligence and Adversary Emulation
+Learned how threat intelligence supports realistic attack simulations.
+Understood how red teams model their activities after real-world threat actors.
+Explored the use of attacker tactics, techniques, and procedures (TTPs) during engagements.
+
+Engagement Scoping
+Learned how target systems, networks, and environments are selected.
+Understood the importance of clearly defining in-scope and out-of-scope assets.
+Explored how scope affects testing methodologies and risk management.
+
+Communication and Coordination
+Learned the importance of communication between stakeholders during an engagement.
+Understood escalation procedures and incident handling requirements.
+Explored how communication contributes to the success and safety of an assessment.
+
+Operational Security (OPSEC)
+Gained an understanding of maintaining operational security throughout an engagement.
+Learned how red teams minimise detection while remaining within authorised boundaries.
+Explored methods used to protect engagement integrity and sensitive information.
+
+Reporting and Lessons Learned
+Learned how findings are documented and presented to stakeholders.
+Understood the importance of actionable recommendations.
+Explored how post-engagement reviews help improve organisational security.
+
+Skills Demonstrated
+Red Team Engagement Planning
+Rules of Engagement Development
+Security Assessment Scoping
+Threat Intelligence Application
+Adversary Emulation Concepts
+Operational Security Awareness
+Stakeholder Communication
+Risk Management
+Security Documentation
+Professional Reporting
+
+Key Takeaways
+Completing Red Team Engagements provided valuable insight into the planning and management aspects of offensive security operations. Beyond technical testing, I learned the importance of proper authorisation, engagement scope, communication, operational security, and professional reporting. These elements are critical to conducting effective and ethical red team assessments in real-world environments.
+
+Technologies and Frameworks Explored
+Red Team Methodologies
+Rules of Engagement (ROE)
+Threat Intelligence Concepts
+Adversary Emulation
+Security Assessment Planning
+Operational Security (OPSEC)
+Risk Management Practices
+Professional Security Reporting
