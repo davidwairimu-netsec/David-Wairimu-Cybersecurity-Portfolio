@@ -1,0 +1,234 @@
+On days fifteen and sixteen, I learnt about IPv6 addressing and the different methods used to assign IPv6 addresses to devices. The lessons focused on Stateless Address Autoconfiguration (SLAAC), Dynamic Host Configuration Protocol version 6 (DHCPv6), Router Advertisements (RA), and the configuration of DHCPv6 servers, clients, and relay agents. These concepts are essential for managing modern IPv6 networks and ensuring devices receive the correct addressing and network configuration.
+
+8.1 IPv6 Global Unicast Address (GUA) Assignment
+1. IPv6 Host Configuration
+
+I learnt the different methods that IPv6 hosts use to obtain network configuration. I understood that devices can receive IPv6 addresses through:
+
+SLAAC
+Stateless DHCPv6
+Stateful DHCPv6
+
+This introduced me to the flexibility of IPv6 address assignment.
+
+2. IPv6 Host Link-Local Address
+
+I learnt that every IPv6-enabled device automatically generates a link-local address using the FE80::/10 prefix. I understood that:
+
+Link-local addresses are created automatically.
+They are used for communication within the local network.
+Routers use them to exchange routing information.
+
+This helped me understand the foundation of IPv6 communication.
+
+3. IPv6 Global Unicast Address (GUA) Assignment
+
+I learnt how devices obtain globally routable IPv6 addresses that allow communication beyond the local network. I understood that GUAs can be assigned through:
+
+SLAAC
+Stateless DHCPv6
+Stateful DHCPv6
+
+This showed me how IPv6 devices communicate across the Internet.
+
+4. Router Advertisement (RA) Message Flags
+
+I learnt about the Router Advertisement (RA) flags that determine how hosts obtain IPv6 addresses.
+
+Autonomous (A) Flag
+
+Indicates that hosts should use SLAAC to generate their own IPv6 addresses.
+
+Other (O) Flag
+
+Indicates that hosts should obtain additional configuration information, such as DNS server addresses, from a DHCPv6 server.
+
+Managed (M) Flag
+
+Indicates that hosts should obtain both their IPv6 addresses and other network information from a DHCPv6 server.
+
+I understood how these flags control IPv6 address assignment methods.
+
+8.2 Stateless Address Autoconfiguration (SLAAC)
+5. SLAAC Overview
+
+I learnt that Stateless Address Autoconfiguration (SLAAC) enables hosts to generate their own IPv6 addresses automatically without requiring a DHCPv6 server.
+
+This demonstrated one of the major advantages of IPv6 over IPv4.
+
+6. Enabling SLAAC
+
+I learnt how routers are configured to support SLAAC by sending Router Advertisement messages to hosts on the network.
+
+This helped me understand the router's role in automatic address assignment.
+
+7. SLAAC Only Method
+
+I learnt that in the SLAAC-only method:
+
+The router provides the network prefix.
+The host creates its own interface identifier.
+No DHCPv6 server is required.
+
+This showed me the simplest IPv6 addressing method.
+
+8. ICMPv6 Router Solicitation (RS) Messages
+
+I learnt that when a device joins a network, it sends a Router Solicitation (RS) message requesting Router Advertisements from nearby routers.
+
+This helped me understand how hosts initiate IPv6 configuration.
+
+9. Host Process to Generate an Interface ID
+
+I learnt how hosts generate the interface portion of an IPv6 address using methods such as:
+
+EUI-64
+Randomly generated interface identifiers
+
+This explained how unique IPv6 addresses are created.
+
+10. Duplicate Address Detection (DAD)
+
+I learnt that before using a newly generated IPv6 address, the host performs Duplicate Address Detection (DAD) to verify that no other device is already using the same address.
+
+This demonstrated how IPv6 prevents address conflicts automatically.
+
+8.3 DHCPv6
+11. DHCPv6 Operation Steps
+
+I learnt the DHCPv6 communication process, which includes the following messages:
+
+Solicit
+Advertise
+Request
+Reply
+
+I understood how clients and servers exchange information during address assignment.
+
+12. Stateless DHCPv6 Operation
+
+I learnt that in Stateless DHCPv6:
+
+SLAAC assigns the IPv6 address.
+DHCPv6 provides additional information such as:
+DNS server addresses
+Domain names
+
+This combines automatic addressing with centralised network configuration.
+
+13. Enable Stateless DHCPv6 on an Interface
+
+I learnt how to configure a router interface to support Stateless DHCPv6 by enabling the appropriate Router Advertisement flags and linking the interface to a DHCPv6 server pool.
+
+This strengthened my router configuration skills.
+
+14. Stateful DHCPv6 Operation
+
+I learnt that in Stateful DHCPv6:
+
+The DHCPv6 server assigns the IPv6 address.
+The server also provides DNS servers and other network parameters.
+
+This method is similar to DHCP used in IPv4 networks.
+
+15. Enable Stateful DHCPv6 on an Interface
+
+I learnt how to configure a router interface for Stateful DHCPv6 by enabling the Managed (M) flag and assigning a DHCPv6 pool.
+
+This showed me how administrators centrally manage IPv6 addressing.
+
+8.4 Configure DHCPv6 Server
+16. DHCPv6 Router Roles
+
+I learnt that routers can perform different DHCPv6 functions, including:
+
+DHCPv6 Server
+DHCPv6 Client
+DHCPv6 Relay Agent
+
+This helped me understand the flexibility of Cisco routers.
+
+17. Configure a Stateless DHCPv6 Server
+
+I practised configuring a router to provide DNS server information and domain names while allowing hosts to generate their own IPv6 addresses through SLAAC.
+
+This introduced me to practical Stateless DHCPv6 deployment.
+
+18. Configure a Stateless DHCPv6 Client
+
+I learnt how client devices receive additional configuration information while generating their own IPv6 addresses automatically.
+
+This reinforced my understanding of Stateless DHCPv6.
+
+19. Configure a Stateful DHCPv6 Server
+
+I learnt how to configure a DHCPv6 server that assigns both IPv6 addresses and additional network parameters to client devices.
+
+This improved my understanding of centralised IPv6 management.
+
+20. Configure a Stateful DHCPv6 Client
+
+I learnt how clients request IPv6 addresses and configuration information directly from a DHCPv6 server.
+
+This demonstrated the complete Stateful DHCPv6 process.
+
+21. DHCPv6 Server Verification Commands
+
+I learnt how to verify DHCPv6 configurations using Cisco IOS commands. These commands helped me:
+
+View DHCPv6 bindings
+Verify address assignments
+Monitor DHCPv6 operations
+Troubleshoot configuration issues
+
+This strengthened my verification and troubleshooting skills.
+
+22. Configure a DHCPv6 Relay Agent
+
+I learnt that DHCPv6 relay agents forward DHCPv6 messages between clients and servers located on different networks.
+
+This introduced me to DHCPv6 deployment in larger enterprise environments.
+
+23. Verify the DHCPv6 Relay Agent
+
+I practised verifying relay agent configurations to ensure DHCPv6 messages were successfully forwarded between network segments.
+
+This improved my understanding of enterprise network design.
+
+8.5 Module Practice and Quiz
+24. Lab – Configure DHCPv6
+
+I completed a hands-on lab where I configured DHCPv6 services in both Stateless and Stateful modes. During the practical exercise, I:
+
+Configured DHCPv6 server pools
+Configured router interfaces
+Enabled SLAAC
+Configured Stateless and Stateful DHCPv6
+Verified client connectivity
+Tested IPv6 communication
+
+The lab allowed me to apply everything I had learnt throughout the module.
+
+25. Comparison of IPv6 Address Assignment Methods
+
+I learnt the differences between the three IPv6 address assignment methods:
+
+SLAAC Only – Hosts generate their own IPv6 addresses using Router Advertisements without DHCPv6.
+Stateless DHCPv6 – Hosts generate their own IPv6 addresses using SLAAC while obtaining additional configuration, such as DNS server information, from a DHCPv6 server.
+Stateful DHCPv6 – A DHCPv6 server assigns both the IPv6 address and additional network configuration information.
+
+This comparison helped me understand when each method is appropriate.
+
+26. Router Advertisement (RA) Flags
+
+I learnt how the Router Advertisement flags determine the addressing method used by IPv6 hosts:
+
+A Flag enables SLAAC.
+O Flag enables Stateless DHCPv6 for additional configuration.
+M Flag enables Stateful DHCPv6 for complete address assignment.
+
+This strengthened my understanding of IPv6 host configuration.
+
+Summary of Days Fifteen and Sixteen
+
+Over these two days, I developed a comprehensive understanding of IPv6 address assignment and DHCPv6. I learnt how devices automatically configure IPv6 addresses using SLAAC, how Stateless and Stateful DHCPv6 differ, how Router Advertisement flags determine addressing behaviour, and how Cisco routers can be configured as DHCPv6 servers, clients, and relay agents. Through practical configuration exercises and hands-on labs, I gained valuable experience in deploying, verifying, and troubleshooting IPv6 addressing services, preparing me to manage modern IPv6 enterprise networks.
