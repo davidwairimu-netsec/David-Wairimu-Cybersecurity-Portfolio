@@ -1,0 +1,59 @@
+Red Team Threat Intelligence – Skills and Knowledge Gained
+
+Upon completing the Red Team Threat Intelligence room, I gained a solid understanding of how threat intelligence supports offensive security operations. The room introduced the role of intelligence in planning realistic attack simulations and demonstrated how red teams use information about real-world adversaries to emulate their behaviour effectively.
+
+Topics Covered
+Introduction to Threat Intelligence
+Learned the purpose and value of threat intelligence in cyber security.
+Understood how intelligence informs security decisions and offensive operations.
+Explored the different stages of the intelligence lifecycle.
+
+    Types of Threat Intelligence
+Distinguished between strategic, operational, tactical, and technical threat intelligence.
+Learned how each type serves different stakeholders within an organisation.
+Understood how intelligence supports both offensive and defensive security teams.
+Intelligence Lifecycle
+Explored the stages of planning, collection, processing, analysis, dissemination, and feedback.
+Learned how raw data is transformed into actionable intelligence.
+Understood the importance of maintaining accurate and relevant intelligence.
+
+    Open-Source Intelligence (OSINT)
+Learned how publicly available information can be collected and analysed.
+Explored common OSINT techniques used during reconnaissance.
+Understood the role of OSINT in profiling organisations and identifying potential attack vectors.
+
+    Threat Actors and Adversary Profiling
+Learned how cyber threat actors are classified based on their motivations, capabilities, and objectives.
+Explored how adversary profiling helps red teams emulate realistic attack scenarios.
+Understood the value of analysing attacker behaviour and historical campaigns.
+
+      MITRE ATT&CK Framework
+Gained an understanding of the MITRE ATT&CK framework and its role in mapping attacker tactics, techniques, and procedures (TTPs).
+Learned how red teams use the framework to emulate real-world adversaries.
+Explored how ATT&CK supports both offensive testing and defensive detection.
+
+        Indicators of Compromise (IOCs) and Indicators of Attack (IOAs)
+Learned the difference between IOCs and IOAs.
+Understood how these indicators help identify malicious activity.
+Explored how intelligence supports threat detection and incident response.
+
+      Intelligence-Driven Red Teaming
+Learned how threat intelligence enhances the planning and execution of red team engagements.
+Understood the importance of basing simulations on real-world attacker behaviour.
+Explored how intelligence-led testing improves the effectiveness of security assessments.
+
+          Skills Demonstrated
+Threat Intelligence Fundamentals
+Intelligence Lifecycle Analysis
+Open-Source Intelligence (OSINT)
+Adversary Profiling
+Threat Actor Research
+MITRE ATT&CK Framework
+Indicators of Compromise (IOCs)
+Indicators of Attack (IOAs)
+Intelligence-Driven Red Teaming
+Security Research and Analysis
+
+Key Takeaways
+
+Completing the Red Team Threat Intelligence room strengthened my understanding of how intelligence supports offensive security operations. I learned how to analyse threat information, profile adversaries, apply the MITRE ATT&CK framework, and use intelligence to design realistic and effective red team engagements. These skills provide a strong foundation for conducting threat-informed security assessments and improving organisational resilience against evolving cyber threats.
