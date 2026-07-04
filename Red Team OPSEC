@@ -1,0 +1,69 @@
+Red Team OPSEC – Skills and Knowledge Gained
+
+Upon completing the Red Team OPSEC room, I developed a strong understanding of Operational Security (OPSEC) principles and their application during authorised red team engagements. The room emphasised the importance of remaining covert, protecting engagement integrity, and reducing the likelihood of detection while operating within defined Rules of Engagement.
+
+Topics Covered
+Introduction to Operational Security (OPSEC)
+Learned the core principles of Operational Security in offensive security.
+Understood the role of OPSEC in maintaining realistic and effective red team engagements.
+Explored how operational mistakes can expose an engagement and reduce its effectiveness.
+
+OPSEC Planning
+Learned how to identify operational risks before an engagement begins.
+Understood the importance of planning actions that minimise unnecessary exposure.
+Explored methods for assessing potential risks throughout an operation.
+
+Maintaining Operational Stealth
+Gained an understanding of techniques used to reduce detection by defensive security controls.
+Learned how attacker behaviour can trigger alerts within monitoring systems.
+Explored strategies for conducting activities while maintaining a low profile.
+
+Infrastructure Security
+Learned the importance of securing red team infrastructure.
+Explored considerations for protecting command-and-control (C2) infrastructure and supporting systems.
+Understood how infrastructure security contributes to successful operations.
+
+Operational Risk Management
+Learned how to identify, assess, and mitigate operational risks.
+Explored how careful planning reduces the likelihood of compromising an engagement.
+Understood the importance of balancing operational objectives with security considerations.
+
+Secure Communications
+Learned the importance of maintaining secure communication channels during engagements.
+Explored best practices for protecting sensitive operational information.
+Understood how communication security supports operational success.
+
+Artefact and Evidence Management
+Learned how operational artefacts can reveal attacker activity.
+Explored methods for reducing unnecessary forensic evidence during authorised simulations.
+Understood the significance of responsible evidence handling throughout an engagement.
+
+Professional and Ethical Considerations
+Reinforced the importance of conducting all activities within authorised environments.
+Learned how OPSEC supports responsible and ethical offensive security operations.
+Understood the relationship between OPSEC, Rules of Engagement, and client trust.
+
+Skills Demonstrated
+Operational Security (OPSEC)
+Risk Assessment and Mitigation
+Red Team Operational Planning
+Stealth and Detection Awareness
+Secure Infrastructure Concepts
+Secure Communications
+Operational Risk Management
+Evidence and Artefact Awareness
+Rules of Engagement Compliance
+Ethical Offensive Security Practices
+
+Key Takeaways
+
+Completing the Red Team OPSEC room strengthened my understanding that successful red team operations rely not only on technical expertise but also on disciplined operational security. I learned how careful planning, secure communications, infrastructure protection, and risk management help ensure engagements remain controlled, realistic, and valuable to an organisation's security programme. These concepts are fundamental to conducting professional and ethical offensive security assessments.
+
+Technologies and Frameworks Explored
+Operational Security (OPSEC)
+Red Team Methodologies
+Rules of Engagement (ROE)
+Risk Management Principles
+Secure Communication Practices
+Detection Avoidance Concepts
+Security Operations Awareness
