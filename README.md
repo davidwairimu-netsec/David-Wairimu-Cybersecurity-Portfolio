@@ -138,8 +138,9 @@ Financial and Business Awareness
 
 **Contact & Professional Development**
 Platforms
-GitHub
-LinkedIn
+GitHub,
+LinkedIn,
+Medium 
 
 
 **Professional Development Goals**
