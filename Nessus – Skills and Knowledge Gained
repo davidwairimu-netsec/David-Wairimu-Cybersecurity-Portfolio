@@ -1,0 +1,69 @@
+Upon completing the Nessus room, I gained practical experience in vulnerability assessment using one of the industry's leading vulnerability management platforms. The room introduced the complete vulnerability scanning process, from configuring scans to analysing results and prioritising remediation efforts.
+
+Topics Covered
+Introduction to Nessus
+Learned the purpose and capabilities of Nessus as a vulnerability assessment tool.
+Understood the role of vulnerability scanning within an organisation's security programme.
+Explored how automated vulnerability assessments support proactive security management.
+Nessus Installation and Configuration
+Gained familiarity with the Nessus interface and dashboard.
+Learned how to configure scan policies and assessment settings.
+Understood how to manage scan targets and authentication options.
+Host Discovery and Enumeration
+Performed network discovery to identify live hosts.
+Learned how Nessus detects operating systems, services, and installed applications.
+Explored service and version identification techniques.
+Vulnerability Scanning
+Configured and executed vulnerability scans against target systems.
+Learned how Nessus identifies security weaknesses using its plugin database.
+Explored different scan templates for various assessment objectives.
+Analysing Scan Results
+Learned how to interpret vulnerability findings.
+Understood the different severity levels, including Critical, High, Medium, Low, and Informational.
+Explored vulnerability details, affected assets, and recommended remediation actions.
+Nessus Plugins
+Gained an understanding of the Nessus plugin architecture.
+Learned how plugins identify specific vulnerabilities and configuration issues.
+Explored plugin information, CVEs, CVSS scores, and vulnerability references.
+Vulnerability Prioritisation
+Learned how to prioritise remediation based on risk and business impact.
+Understood the importance of validating findings before remediation.
+Explored best practices for reducing organisational risk.
+Reporting
+Learned how to generate professional vulnerability assessment reports.
+Explored executive summaries and technical reports.
+Understood how effective reporting supports remediation planning and communication with stakeholders.
+Skills Demonstrated
+Vulnerability Assessment
+Nessus Configuration and Administration
+Network Host Discovery
+Service Enumeration
+Vulnerability Analysis
+Risk Assessment
+CVE and CVSS Interpretation
+Nessus Plugin Analysis
+Vulnerability Prioritisation
+Security Reporting
+Tools and Technologies
+Nessus Essentials
+Tenable Nessus
+TCP/IP Networking
+CVE Database
+CVSS Scoring System
+Network Service Enumeration
+Key Takeaways
+
+Completing the Nessus room strengthened my understanding of vulnerability management and the role automated scanning plays in identifying security weaknesses. I gained hands-on experience configuring scans, analysing vulnerability findings, interpreting risk ratings, and producing actionable reports. These skills are essential for supporting proactive vulnerability management and improving an organisation's overall security posture.
+
+Practical Outcomes
+
+During this lab, I successfully:
+
+Configured and launched vulnerability scans.
+Identified exposed network services and software versions.
+Analysed vulnerability findings and severity ratings.
+Investigated Nessus plugins and associated CVEs.
+Reviewed remediation recommendations for identified vulnerabilities.
+Produced and interpreted vulnerability assessment results using industry-standard practices.
+
+This room is documented as part of my Try-Hack-me-Learning-journey branch, where I showcase practical cyber security labs, vulnerability assessments, penetration testing exercises, and continuous professional development in authorised training environments.
