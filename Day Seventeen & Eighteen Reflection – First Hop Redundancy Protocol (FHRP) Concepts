@@ -1,0 +1,157 @@
+On days seventeen and eighteen, I learnt about First Hop Redundancy Protocols (FHRPs), which provide high availability and redundancy for default gateways in a network. The lessons focused on the limitations of a single default gateway, router redundancy, Hot Standby Router Protocol (HSRP), router failover mechanisms, and practical HSRP configuration. These concepts are essential in enterprise networking because they minimise downtime and ensure continuous network connectivity if a router fails.
+
+9.1 First Hop Redundancy Protocols
+1. Default Gateway Limitations
+
+I learnt that using a single default gateway creates a single point of failure within a network. I understood that:
+
+If the default gateway fails, devices lose access to other networks.
+Network communication outside the local network stops.
+High availability cannot be achieved without redundancy.
+
+This helped me understand why backup gateway solutions are necessary in enterprise environments.
+
+2. Router Redundancy
+
+I learnt that router redundancy involves deploying multiple routers to provide continuous network availability. I understood that:
+
+One router operates as the active gateway.
+Another router remains on standby.
+If the active router fails, the standby router automatically takes over.
+
+This introduced me to the concept of fault tolerance in network design.
+
+3. Steps for Router Failover
+
+I learnt how router failover occurs when the primary router becomes unavailable. The process includes:
+
+Detecting the failure.
+Promoting the standby router to active status.
+Allowing hosts to continue communicating without changing their default gateway configuration.
+
+This showed me how redundancy reduces network downtime.
+
+4. First Hop Redundancy Protocol (FHRP) Options
+
+I learnt about several First Hop Redundancy Protocols used in enterprise networks, including:
+
+HSRP (Hot Standby Router Protocol) – Cisco proprietary.
+VRRP (Virtual Router Redundancy Protocol) – Open standard.
+GLBP (Gateway Load Balancing Protocol) – Cisco proprietary with load balancing capabilities.
+
+I understood that these protocols improve network reliability while reducing the risk of gateway failure.
+
+5. Check Your Understanding – First Hop Redundancy Protocols
+
+I completed an assessment activity that tested my understanding of:
+
+Gateway redundancy
+Router failover
+High availability concepts
+Different FHRP options
+
+This reinforced my understanding of redundant gateway technologies.
+
+9.2 Hot Standby Router Protocol (HSRP)
+6. HSRP Overview
+
+I learnt that Hot Standby Router Protocol (HSRP) provides gateway redundancy by allowing multiple routers to share a single virtual IP address. I understood that:
+
+Hosts use the virtual IP address as their default gateway.
+Only one router actively forwards traffic.
+A standby router automatically assumes control if the active router fails.
+
+This demonstrated how HSRP provides seamless network continuity.
+
+7. HSRP Priority and Preemption
+
+I learnt how HSRP determines which router becomes active.
+
+The router with the highest priority becomes the active router.
+Preemption allows a higher-priority router to regain the active role after recovering from a failure.
+
+This helped me understand how administrators control HSRP elections.
+
+8. HSRP States and Timers
+
+I learnt the different operational states used by HSRP, including:
+
+Initial
+Learn
+Listen
+Speak
+Standby
+Active
+
+I also learnt that HSRP uses timers to:
+
+Detect router failures.
+Maintain communication between routers.
+Ensure quick failover when required.
+
+This strengthened my understanding of HSRP operation.
+
+9. Check Your Understanding – HSRP
+
+I completed an assessment activity that tested my understanding of:
+
+HSRP operation
+Priority configuration
+Router roles
+State transitions
+Failover behaviour
+
+This improved my knowledge of HSRP implementation.
+
+9.3 Module Practice and Quiz
+10. What Did I Learn in This Module?
+
+Throughout this module, I learnt:
+
+The limitations of a single default gateway.
+The importance of router redundancy.
+How First Hop Redundancy Protocols improve network availability.
+How HSRP provides seamless gateway failover.
+How router priorities and preemption affect active router selection.
+How HSRP states and timers manage failover operations.
+
+This module strengthened my understanding of high-availability networking.
+
+11. Module Quiz – FHRP Concepts
+
+I completed the module quiz, which assessed my knowledge of:
+
+FHRP concepts
+Router redundancy
+HSRP operation
+Failover mechanisms
+High-availability networking
+
+The quiz confirmed my understanding of the concepts covered throughout the module.
+
+12. Packet Tracer – HSRP Configuration Guide
+
+I completed a Packet Tracer lab where I configured HSRP between routers. During the practical exercise, I:
+
+Configured a virtual IP address.
+Assigned HSRP priorities.
+Enabled preemption.
+Verified active and standby router roles.
+Tested automatic failover after simulating a router failure.
+
+This hands-on lab improved my confidence in configuring redundant default gateways.
+
+13. Packet Tracer – Data Centre Exploration
+
+Finally, I completed a Packet Tracer activity exploring a data centre network. During this exercise, I observed:
+
+How redundancy is implemented in enterprise data centres.
+The use of HSRP for gateway availability.
+Multiple redundant network paths.
+High-availability network design principles.
+
+This activity helped me relate classroom concepts to real-world enterprise infrastructure.
+
+Summary of Days Seventeen and Eighteen
+
+Over these two days, I gained a comprehensive understanding of First Hop Redundancy Protocols and their importance in building highly available networks. I learnt how router redundancy eliminates the single point of failure associated with default gateways, how HSRP provides automatic failover using a virtual gateway, and how priorities, preemption, and HSRP states ensure uninterrupted network communication. Through assessments, Packet Tracer labs, and data centre exploration, I developed practical skills in configuring and verifying HSRP, preparing me to design and maintain resilient enterprise network infrastructures.
