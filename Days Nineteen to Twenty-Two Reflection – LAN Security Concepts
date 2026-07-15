@@ -1,0 +1,300 @@
+Over days nineteen to twenty-two, I learnt about LAN Security Concepts, focusing on protecting networks from internal and external threats. The module introduced endpoint security, access control, Layer 2 security threats, MAC address table attacks, and common LAN attacks. I also learnt how organisations use security devices, authentication mechanisms, and mitigation techniques to secure enterprise networks.
+
+These lessons helped me understand that network security is not only about protecting the perimeter but also about securing every device, switch, and communication within a Local Area Network (LAN).
+
+10.1 Endpoint Security
+1. Network Attacks Today
+
+I learnt about the growing number of cyber threats targeting modern networks. I understood that organisations face attacks such as:
+
+Malware
+Ransomware
+Phishing
+Social engineering
+Denial-of-Service (DoS) attacks
+Insider threats
+
+This topic highlighted the importance of implementing multiple layers of security to protect network resources.
+
+2. Network Security Devices
+
+I learnt about various security devices used to protect enterprise networks, including:
+
+Firewalls
+Intrusion Detection Systems (IDS)
+Intrusion Prevention Systems (IPS)
+Virtual Private Networks (VPNs)
+Security Information and Event Management (SIEM) systems
+
+I understood how each device contributes to detecting, preventing, and responding to cyber threats.
+
+3. Endpoint Protection
+
+I learnt that endpoint protection focuses on securing devices connected to the network, such as:
+
+Desktop computers
+Laptops
+Mobile devices
+Servers
+
+I understood that endpoint protection includes:
+
+Antivirus software
+Anti-malware tools
+Host firewalls
+Endpoint Detection and Response (EDR)
+
+This helped me appreciate the importance of protecting every device that accesses a network.
+
+4. Cisco Email Security Appliance
+
+I learnt how Cisco Email Security Appliance protects organisations against email-based threats by:
+
+Filtering spam
+Blocking phishing emails
+Detecting malware attachments
+Preventing malicious email delivery
+
+This demonstrated how email security reduces one of the most common attack vectors.
+
+5. Cisco Web Security Appliance
+
+I learnt how Cisco Web Security Appliance protects users while browsing the internet by:
+
+Blocking malicious websites
+Filtering inappropriate content
+Preventing malware downloads
+Enforcing web usage policies
+
+This introduced me to secure web browsing solutions used in enterprise environments.
+
+6. Check Your Understanding – Endpoint Security
+
+I completed an assessment activity that reinforced my understanding of endpoint protection strategies and network security devices.
+
+10.2 Access Control
+7. Authentication with a Local Password
+
+I learnt how network devices authenticate users using locally configured usernames and passwords. I understood that secure password policies are essential for protecting network access.
+
+8. AAA Components
+
+I learnt about the three core components of AAA:
+
+Authentication
+Authorisation
+Accounting
+
+These components provide a structured approach to managing user access within enterprise networks.
+
+9. Authentication
+
+I learnt that authentication verifies the identity of users before they are granted access to network resources.
+
+I understood that authentication methods include:
+
+Passwords
+Multi-factor authentication (MFA)
+Certificates
+Biometrics
+10. Authorisation
+
+I learnt that authorisation determines what an authenticated user is allowed to do after successfully logging into the system.
+
+This ensures users only access resources appropriate to their roles.
+
+11. Accounting
+
+I learnt that accounting records user activity, including:
+
+Login times
+Commands executed
+Resources accessed
+Logout times
+
+I understood that accounting supports auditing, compliance, and incident investigations.
+
+12. IEEE 802.1X
+
+I learnt about IEEE 802.1X, a network access control standard that authenticates devices before allowing them to connect to a LAN.
+
+I understood that:
+
+Unauthorised devices are denied access.
+Authentication occurs before network communication begins.
+Network security is significantly improved.
+13. Check Your Understanding – Access Control
+
+I completed an assessment activity that strengthened my understanding of authentication, authorisation, accounting, and secure network access.
+
+10.3 Layer 2 Security Threats
+14. Layer 2 Vulnerabilities
+
+I learnt that switches can be vulnerable to attacks targeting Layer 2 of the OSI model. These vulnerabilities may compromise:
+
+Confidentiality
+Integrity
+Availability
+
+This introduced me to the security risks within switched networks.
+
+15. Switch Attack Categories
+
+I studied common switch attacks, including:
+
+MAC address table attacks
+VLAN attacks
+DHCP attacks
+ARP attacks
+STP attacks
+
+I understood how attackers exploit weaknesses within switched environments.
+
+16. Switch Attack Mitigation Techniques
+
+I learnt several techniques used to secure switches, including:
+
+Port Security
+BPDU Guard
+Root Guard
+DHCP Snooping
+Dynamic ARP Inspection (DAI)
+Storm Control
+
+These mitigation methods improve network resilience against Layer 2 attacks.
+
+17. Check Your Understanding – Layer 2 Security Threats
+
+I completed an assessment activity that reinforced my knowledge of Layer 2 vulnerabilities and their mitigation.
+
+10.4 MAC Address Table Attacks
+18. Switch Operation Review
+
+I reviewed how switches learn MAC addresses and populate their MAC address tables to forward frames efficiently.
+
+This refreshed my understanding of normal switch operations.
+
+19. MAC Address Table Flooding
+
+I learnt that attackers can flood a switch with fake MAC addresses until the MAC address table becomes full.
+
+I understood that:
+
+The switch begins flooding traffic to all ports.
+Attackers may capture sensitive network traffic.
+Confidentiality is compromised.
+
+This demonstrated how attackers exploit switch behaviour.
+
+20. MAC Address Table Attack Mitigation
+
+I learnt how Port Security helps prevent MAC flooding attacks by:
+
+Limiting the number of MAC addresses per port.
+Restricting unknown devices.
+Automatically disabling compromised ports.
+
+This showed me how simple configurations greatly improve security.
+
+21. Check Your Understanding – MAC Address Table Attacks
+
+I completed an assessment activity that reinforced my understanding of MAC flooding attacks and defence mechanisms.
+
+10.5 LAN Attacks
+22. VLAN and DHCP Attacks
+
+I learnt how attackers exploit VLAN configurations and DHCP services to intercept or manipulate network traffic.
+
+This introduced me to common attacks against switched networks.
+
+23. VLAN Hopping Attacks
+
+I learnt that VLAN hopping allows attackers to access traffic belonging to another VLAN by exploiting switch configurations.
+
+This demonstrated the importance of proper VLAN security.
+
+24. VLAN Double-Tagging Attack
+
+I learnt how attackers use two VLAN tags to bypass VLAN boundaries and gain access to restricted VLANs.
+
+I understood why proper native VLAN configuration is essential.
+
+25. DHCP Messages
+
+I reviewed the DHCP message exchange process and how DHCP clients communicate with DHCP servers.
+
+This prepared me to understand DHCP-related attacks.
+
+26. DHCP Attacks
+
+I learnt about attacks such as:
+
+DHCP Starvation
+Rogue DHCP Servers
+
+I understood how these attacks disrupt legitimate address assignment and redirect network traffic.
+
+27. ARP Attacks
+
+I learnt how attackers exploit the Address Resolution Protocol (ARP) by sending forged ARP messages.
+
+This can result in:
+
+Man-in-the-Middle (MitM) attacks
+Traffic interception
+Data manipulation
+28. Address Spoofing Attack
+
+I learnt that attackers can impersonate legitimate devices by forging MAC or IP addresses.
+
+This highlighted the importance of device authentication and access control.
+
+29. STP Attack
+
+I learnt how attackers can manipulate the Spanning Tree Protocol by introducing a rogue switch that attempts to become the root bridge.
+
+I understood how BPDU Guard and Root Guard help prevent this attack.
+
+30. CDP Reconnaissance
+
+I learnt that Cisco Discovery Protocol (CDP) broadcasts valuable network information that attackers can use for reconnaissance.
+
+I understood why CDP should be disabled on interfaces connected to untrusted networks.
+
+31. Check Your Understanding – LAN Attacks
+
+I completed an assessment activity that strengthened my understanding of common LAN attacks and the methods used to defend against them.
+
+10.6 Module Practice and Quiz
+32. What Did I Learn in This Module?
+
+Throughout this module, I learnt:
+
+The importance of endpoint security.
+The role of network security devices.
+Authentication, Authorisation, and Accounting (AAA).
+IEEE 802.1X network access control.
+Layer 2 vulnerabilities and attack mitigation.
+MAC address table attacks.
+VLAN hopping and double-tagging attacks.
+DHCP, ARP, STP, and CDP security threats.
+Best practices for protecting enterprise LANs.
+
+This module greatly improved my understanding of network security principles and enterprise defence strategies.
+
+33. Module Quiz – LAN Security Concepts
+
+Finally, I completed the module quiz, which assessed my understanding of:
+
+Endpoint protection
+Access control
+Layer 2 security
+LAN attacks
+Switch security
+Network defence mechanisms
+
+The quiz confirmed my understanding of the concepts covered throughout the module.
+
+Summary of Days Nineteen to Twenty-Two
+
+Over these four days, I developed a strong understanding of LAN security and the threats that target modern enterprise networks. I learnt how endpoint protection, access control, and network security devices work together to safeguard network resources. I also studied common Layer 2 attacks, including MAC flooding, VLAN hopping, DHCP attacks, ARP spoofing, STP manipulation, and CDP reconnaissance, along with the techniques used to mitigate them. Through assessments and the module quiz, I strengthened my ability to identify vulnerabilities, apply security best practices, and protect switched networks against common cyber threats.
