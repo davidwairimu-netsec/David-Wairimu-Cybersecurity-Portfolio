@@ -1,0 +1,271 @@
+Over days twenty-two to twenty-five, I learnt how to secure Cisco switches against common Layer 2 attacks by implementing various switch security features. The module focused on port security, VLAN attack mitigation, DHCP Snooping, Dynamic ARP Inspection (DAI), Spanning Tree Protocol (STP) security, and practical switch hardening techniques. These lessons built upon the LAN Security Concepts module by teaching me how to configure security features that protect enterprise switching environments.
+
+11.1 Implement Port Security
+1. Secure Unused Ports
+
+I learnt that unused switch ports should never be left active because they can provide attackers with unauthorised access to the network. I practised securing unused ports by:
+
+Shutting down inactive interfaces.
+Assigning unused ports to an unused VLAN.
+Labelling ports for easier management.
+
+This taught me that securing unused ports is one of the simplest yet most effective security measures.
+
+2. Mitigate MAC Address Table Attacks
+
+I learnt how Port Security protects switches against MAC address table flooding attacks by restricting which devices can connect to a switch port.
+
+This reinforced the importance of preventing unauthorised devices from accessing the network.
+
+3. Enable Port Security
+
+I learnt how to enable Port Security on switch interfaces. I understood that Port Security:
+
+Restricts network access to authorised devices.
+Monitors connected MAC addresses.
+Protects against unauthorised connections.
+
+This introduced me to one of the most important switch security features.
+
+4. Limit and Learn MAC Addresses
+
+I learnt how switches can:
+
+Manually configure trusted MAC addresses.
+Dynamically learn secure MAC addresses.
+Limit the number of MAC addresses allowed on each interface.
+
+This helps prevent unauthorised devices from connecting to the network.
+
+5. Port Security Aging
+
+I learnt that Port Security aging removes secure MAC addresses after a configured period of inactivity. I understood that:
+
+Aging allows network flexibility.
+Devices can be replaced without manual intervention.
+Secure MAC tables remain up to date.
+
+This demonstrated how security can be maintained without reducing usability.
+
+6. Port Security Violation Modes
+
+I learnt the three Port Security violation modes:
+
+Protect
+
+Drops traffic from unauthorised devices while keeping the port active.
+
+Restrict
+
+Drops unauthorised traffic, records violations, and generates alerts.
+
+Shutdown
+
+Places the port into an error-disabled state when a violation occurs.
+
+This helped me understand how administrators respond to security violations.
+
+7. Ports in Error-Disabled State
+
+I learnt that a switch automatically disables a port after certain security violations occur. I also learnt how administrators can recover ports after correcting the problem.
+
+This improved my understanding of switch recovery procedures.
+
+8. Verify Port Security
+
+I learnt how to verify Port Security using Cisco IOS commands. I checked:
+
+Secure MAC addresses
+Port status
+Violation counts
+Security configuration
+
+This strengthened my verification and troubleshooting skills.
+
+9. Syntax Checker – Implement Port Security
+
+I practised Port Security commands using a syntax checker, improving my confidence in configuring Cisco switches correctly.
+
+10. Packet Tracer – Implement Port Security
+
+I completed a Packet Tracer activity where I:
+
+Enabled Port Security.
+Configured secure MAC addresses.
+Tested security violations.
+Verified switch behaviour.
+
+This practical exercise reinforced the concepts covered in the lesson.
+
+11.2 Mitigate VLAN Attacks
+11. VLAN Attacks Review
+
+I reviewed VLAN attacks such as VLAN hopping and double-tagging, understanding how attackers attempt to bypass VLAN separation.
+
+This reinforced the importance of secure VLAN configuration.
+
+12. Steps to Mitigate VLAN Hopping Attacks
+
+I learnt several techniques used to prevent VLAN hopping attacks, including:
+
+Disabling Dynamic Trunking Protocol (DTP) on access ports.
+Manually configuring trunk ports.
+Assigning an unused native VLAN.
+Disabling unused switch ports.
+
+These practices improve VLAN security in enterprise networks.
+
+13. Syntax Checker – Mitigate VLAN Hopping Attacks
+
+I practised configuring VLAN security settings using a syntax checker, helping me become more familiar with Cisco IOS commands.
+
+11.3 Mitigate DHCP Attacks
+14. DHCP Attack Review
+
+I reviewed DHCP attacks, including:
+
+Rogue DHCP servers.
+DHCP starvation attacks.
+
+I understood how these attacks disrupt legitimate network services.
+
+15. DHCP Snooping
+
+I learnt that DHCP Snooping protects networks by:
+
+Allowing DHCP messages only from trusted ports.
+Blocking rogue DHCP servers.
+Building a trusted DHCP binding database.
+
+This introduced me to one of the most important Layer 2 security features.
+
+16. Steps to Implement DHCP Snooping
+
+I learnt the process of configuring DHCP Snooping by:
+
+Enabling DHCP Snooping globally.
+Specifying trusted interfaces.
+Enabling DHCP Snooping for selected VLANs.
+Verifying the DHCP binding database.
+
+This gave me practical knowledge of implementing DHCP protection.
+
+17. DHCP Snooping Configuration Example
+
+I studied configuration examples showing how DHCP Snooping is deployed on Cisco switches and how it protects clients against malicious DHCP servers.
+
+18. Syntax Checker – Mitigate DHCP Attacks
+
+I practised DHCP Snooping configuration commands using a syntax checker to improve my configuration accuracy.
+
+11.4 Mitigate ARP Attacks
+19. Dynamic ARP Inspection (DAI)
+
+I learnt that Dynamic ARP Inspection validates ARP packets before they are forwarded by comparing them against trusted DHCP Snooping bindings.
+
+I understood that DAI helps prevent:
+
+ARP spoofing
+ARP poisoning
+Man-in-the-Middle attacks
+20. DAI Implementation Guidelines
+
+I learnt the recommended practices for implementing DAI, including:
+
+Enabling DHCP Snooping first.
+Configuring trusted interfaces.
+Applying DAI only to required VLANs.
+
+This demonstrated how multiple security features work together.
+
+21. DAI Configuration Example
+
+I studied practical examples showing how to configure Dynamic ARP Inspection on Cisco switches and verify its operation.
+
+22. Syntax Checker – Mitigate ARP Attacks
+
+I practised DAI configuration commands using a syntax checker, strengthening my Cisco IOS configuration skills.
+
+11.5 Mitigate STP Attacks
+23. PortFast and BPDU Guard
+
+I learnt how PortFast and BPDU Guard improve switch security.
+
+PortFast
+
+Allows end devices to begin forwarding traffic immediately without waiting for STP convergence.
+
+BPDU Guard
+
+Protects the network by disabling ports that receive unexpected Bridge Protocol Data Units (BPDUs).
+
+These features prevent accidental or malicious changes to the spanning tree topology.
+
+24. Configure PortFast
+
+I learnt how to configure PortFast on access ports connected to end devices, reducing connection delays while maintaining network stability.
+
+25. Configure BPDU Guard
+
+I learnt how to configure BPDU Guard to automatically disable ports receiving unauthorised BPDUs, protecting the network against rogue switches.
+
+26. Syntax Checker – Mitigate STP Attacks
+
+I practised configuring PortFast and BPDU Guard using a syntax checker to improve my command-line proficiency.
+
+11.6 Module Practice and Quiz
+27. Packet Tracer – Switch Security Configuration
+
+I completed a Packet Tracer activity where I implemented multiple switch security features, including:
+
+Port Security
+DHCP Snooping
+Dynamic ARP Inspection
+PortFast
+BPDU Guard
+
+This practical exercise demonstrated how several security mechanisms work together to protect enterprise networks.
+
+28. Lab – Switch Security Configuration
+
+I completed a hands-on lab where I configured and verified switch security settings across multiple devices. During the lab, I:
+
+Secured unused ports.
+Configured Port Security.
+Enabled DHCP Snooping.
+Implemented Dynamic ARP Inspection.
+Configured PortFast and BPDU Guard.
+Tested switch security features.
+
+The lab strengthened my practical switch hardening skills.
+
+29. What Did I Learn in This Module?
+
+Throughout this module, I learnt:
+
+How to secure unused switch ports.
+How Port Security protects against MAC flooding attacks.
+How to mitigate VLAN hopping attacks.
+How DHCP Snooping prevents rogue DHCP servers.
+How Dynamic ARP Inspection prevents ARP spoofing.
+How PortFast and BPDU Guard protect the Spanning Tree Protocol.
+Best practices for securing enterprise switches.
+
+This module significantly improved my understanding of switch hardening and Layer 2 security.
+
+30. Module Quiz – Switch Security Configuration
+
+Finally, I completed the module quiz, which assessed my understanding of:
+
+Port Security
+VLAN security
+DHCP Snooping
+Dynamic ARP Inspection
+STP security
+Switch hardening best practices
+
+The quiz confirmed my understanding of switch security concepts and practical implementation techniques.
+
+Summary of Days Twenty-Two to Twenty-Five
+
+Over these four days, I developed practical skills in securing Cisco switches against common Layer 2 attacks. I learnt how to implement Port Security, protect against VLAN hopping, configure DHCP Snooping and Dynamic ARP Inspection, and secure the Spanning Tree Protocol using PortFast and BPDU Guard. Through Packet Tracer activities, hands-on labs, syntax checkers, and quizzes, I gained valuable experience in hardening enterprise switches and protecting network infrastructure from unauthorised access and common switching attacks. These skills are fundamental for designing, implementing, and maintaining secure enterprise LAN environments.
