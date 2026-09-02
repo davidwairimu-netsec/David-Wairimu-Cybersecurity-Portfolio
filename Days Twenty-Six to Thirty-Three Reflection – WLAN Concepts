@@ -1,0 +1,347 @@
+Over days twenty-six to thirty-three, I studied Wireless Local Area Network (WLAN) Concepts. This was a broad section of my networking journey, covering the fundamentals of wireless networking, WLAN components, wireless communication, CAPWAP, channel management, wireless threats, and WLAN security.
+
+The module helped me move beyond traditional wired networking and understand how wireless devices communicate, how wireless networks are designed and managed, and how they can be protected against security threats.
+
+12.1 Introduction to Wireless
+1. Benefits of Wireless
+
+I learnt about the advantages of wireless networking and why organisations use WLANs. I understood that wireless networks provide:
+
+Mobility for users.
+Easier network access.
+Reduced dependence on physical cabling.
+Greater flexibility when expanding a network.
+Convenient connectivity for laptops, smartphones, tablets and other devices.
+
+This helped me understand why wireless networking has become an important part of modern network infrastructure.
+
+2. Types of Wireless Networks
+
+I learnt that wireless networks can be classified according to their size and purpose. These include:
+
+WPAN: Wireless Personal Area Network.
+WLAN: Wireless Local Area Network.
+WMAN: Wireless Metropolitan Area Network.
+WWAN: Wireless Wide Area Network.
+
+I understood that each type serves a different geographical area and networking requirement.
+
+3. Wireless Technologies
+
+I learnt about different wireless technologies and how they are used for communication. These include technologies such as:
+
+Wi-Fi
+Bluetooth
+Cellular networks
+Near Field Communication (NFC)
+
+This helped me understand that wireless communication is not limited to Wi-Fi.
+
+4. 802.11 Standards
+
+I learnt that the IEEE 802.11 family of standards defines how Wi-Fi networks operate. I studied how different 802.11 standards provide different levels of speed, frequency support and capabilities.
+
+This helped me understand why different generations of Wi-Fi offer different performance levels.
+
+5. Radio Frequencies
+
+I learnt that wireless communication uses radio frequency waves to transmit information through the air.
+
+I studied the importance of frequency bands, particularly the 2.4 GHz and 5 GHz bands used by Wi-Fi.
+
+I also learnt that factors such as interference, distance and obstacles can affect wireless signal quality.
+
+6. Wireless Standards Organisations
+
+I learnt about organisations responsible for developing and maintaining wireless networking standards, particularly the IEEE.
+
+I understood that standards are important because they allow equipment from different manufacturers to communicate using common technical specifications.
+
+7. Check Your Understanding – Introduction to Wireless
+
+I completed an assessment activity to test my understanding of wireless networking fundamentals, technologies, standards and radio frequencies.
+
+12.2 WLAN Components
+8. WLAN Components
+
+I learnt about the different components required to build a wireless network and how they work together to provide connectivity.
+
+This helped me understand that a WLAN consists of more than simply installing a wireless router.
+
+9. Wireless Network Interface Cards (NICs)
+
+I learnt that a Wireless NIC enables a device such as a laptop or desktop computer to connect to a wireless network.
+
+I understood that the wireless NIC:
+
+Sends wireless signals.
+Receives wireless signals.
+Provides the device with wireless network connectivity.
+10. Wireless Home Router
+
+I learnt that a wireless home router combines several networking functions into one device. It can provide:
+
+Wireless access.
+Routing.
+Switching.
+DHCP services.
+Network Address Translation (NAT).
+Basic firewall capabilities.
+
+This helped me understand the equipment commonly found in home networks.
+
+11. Wireless Access Points
+
+I learnt that a Wireless Access Point (AP) provides wireless connectivity to client devices and connects wireless users to the wired network.
+
+I understood that enterprise networks commonly use dedicated access points rather than relying on basic home wireless routers.
+
+12. AP Categories
+
+I learnt that access points can be deployed in different ways depending on network requirements.
+
+I studied different AP categories and understood that organisations can choose an appropriate deployment model based on factors such as network size, management requirements and available infrastructure.
+
+13. Wireless Antennas
+
+I learnt that antennas transmit and receive wireless radio signals.
+
+I also learnt that different antenna designs provide different coverage patterns, which means antenna selection is important when planning a WLAN.
+
+14. Check Your Understanding – WLAN Components
+
+I completed an assessment that tested my understanding of wireless NICs, access points, wireless routers, AP categories and antennas.
+
+12.3 WLAN Operation
+15. 802.11 Wireless Topology Modes
+
+I learnt about the different topology modes used by 802.11 wireless networks.
+
+I understood the difference between:
+
+Ad hoc mode, where wireless devices communicate directly.
+Infrastructure mode, where wireless clients communicate through an access point.
+
+This helped me understand how wireless devices establish communication.
+
+16. BSS and ESS
+
+I learnt about:
+
+Basic Service Set (BSS)
+A BSS consists of wireless devices communicating through a single access point.
+
+Extended Service Set (ESS)
+An ESS consists of multiple interconnected BSSs that provide broader wireless coverage.
+
+This helped me understand how larger WLANs can provide wireless connectivity across multiple areas.
+
+17. 802.11 Frame Structure
+
+I learnt that wireless communication uses specific 802.11 frame structures to transport information.
+
+I studied the different fields contained within wireless frames and understood how they help devices identify the source, destination and characteristics of wireless traffic.
+
+18. CSMA/CA
+
+I learnt about Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA).
+
+I understood that wireless networks use collision avoidance because wireless devices cannot reliably detect collisions in the same way that traditional Ethernet networks can.
+
+This helped me understand how multiple wireless devices share the same communication medium.
+
+19. Wireless Client and AP Association
+
+I learnt how wireless clients discover and associate with access points.
+
+I understood that the process involves:
+
+Discovering available networks.
+Selecting an appropriate access point.
+Authenticating where required.
+Associating with the access point.
+
+This explained how my laptop or phone connects to a Wi-Fi network.
+
+20. Passive and Active Discover Mode
+
+I learnt the difference between passive and active wireless discovery.
+
+Passive discovery involves the client listening for beacon frames from access points.
+
+Active discovery involves the client sending probe requests to discover available wireless networks.
+
+This helped me understand how wireless devices identify nearby networks.
+
+21. Check Your Understanding – WLAN Operation
+
+I completed an assessment that tested my understanding of wireless topologies, BSS and ESS, 802.11 frames, CSMA/CA and wireless client association.
+
+12.4 CAPWAP Operation
+22. Introduction to CAPWAP
+
+I learnt about Control and Provisioning of Wireless Access Points (CAPWAP).
+
+I understood that CAPWAP allows wireless access points to communicate with a central wireless LAN controller and enables centralised management of WLAN infrastructure.
+
+23. Split-MAC Architecture
+
+I learnt about the Split-MAC architecture used with CAPWAP.
+
+I understood that wireless access point functions can be divided between:
+
+The access point.
+The Wireless LAN Controller (WLC).
+
+This allows centralised management while access points continue to provide wireless connectivity.
+
+24. DTLS Encryption
+
+I learnt that Datagram Transport Layer Security (DTLS) can protect CAPWAP control communication.
+
+This showed me how encryption helps protect management and control traffic between wireless infrastructure components.
+
+25. FlexConnect APs
+
+I learnt about FlexConnect access points and how they can provide wireless services in branch locations while reducing dependence on continuous centralised controller connectivity.
+
+This introduced me to wireless solutions suitable for distributed enterprise environments.
+
+26. Check Your Understanding – CAPWAP Operation
+
+I completed an assessment activity to test my understanding of CAPWAP, Split-MAC architecture, DTLS and FlexConnect.
+
+12.5 Channel Management
+27. Frequency Channel Saturation
+
+I learnt that multiple wireless devices operating on the same or overlapping frequencies can create interference and reduce network performance.
+
+I understood that excessive channel usage can lead to:
+
+Reduced throughput.
+Increased interference.
+Poor wireless performance.
+28. Channel Selection
+
+I learnt that selecting appropriate wireless channels is important when designing a WLAN.
+
+I understood that administrators need to consider:
+
+Existing wireless networks.
+Channel interference.
+Frequency bands.
+Network coverage.
+29. Plan a WLAN Deployment
+
+I learnt that WLAN deployment requires careful planning rather than simply installing access points wherever convenient.
+
+I learnt to consider:
+
+Coverage requirements.
+Number of users.
+Access point placement.
+Interference.
+Channel allocation.
+Wireless security.
+
+This helped me understand the importance of proper wireless network design.
+
+30. Check Your Understanding – Channel Management
+
+I completed an assessment to reinforce my understanding of wireless channel management and WLAN deployment planning.
+
+12.6 WLAN Threats
+31. Wireless Security Overview
+
+I learnt that wireless networks face unique security risks because communication takes place through radio signals that can potentially be received outside the physical boundaries of an organisation.
+
+This means wireless security must address both network access and radio-based threats.
+
+32. DoS Attacks
+
+I learnt how Denial-of-Service attacks can affect wireless networks by overwhelming or disrupting wireless communication.
+
+I understood that DoS attacks can reduce network availability and prevent legitimate users from accessing WLAN services.
+
+33. Rogue Access Points
+
+I learnt that a rogue access point is an unauthorised wireless device connected to an organisation's network.
+
+I understood that rogue APs can:
+
+Provide attackers with unauthorised network access.
+Bypass security controls.
+Create security vulnerabilities.
+
+This highlighted the importance of monitoring wireless infrastructure.
+
+34. Man-in-the-Middle Attack
+
+I learnt how an attacker can position themselves between a wireless client and legitimate network services in an attempt to intercept or manipulate communication.
+
+This helped me understand why strong wireless authentication and encryption are essential.
+
+35. Check Your Understanding – WLAN Threats
+
+I completed an assessment covering wireless security threats and their potential impact on network confidentiality, integrity and availability.
+
+12.7 Secure WLANs
+36. SSID Cloaking and MAC Address Filtering
+
+I learnt about techniques such as SSID cloaking and MAC address filtering.
+
+I understood that these methods can provide some additional control, but they should not be treated as strong security mechanisms on their own.
+
+This taught me the difference between hiding or filtering network information and actually securing wireless communication.
+
+37. 802.11 Original Authentication Methods
+
+I learnt about the original authentication methods used by 802.11 wireless networks.
+
+This helped me understand how wireless security has evolved as older authentication approaches have become inadequate.
+
+38. Shared Key Authentication Methods
+
+I learnt how shared key authentication works and why older methods have security weaknesses.
+
+This reinforced the importance of using modern wireless security standards instead of relying on outdated authentication mechanisms.
+
+39. Authenticating a Home User
+
+I learnt how wireless users authenticate to a home WLAN using a pre-shared key.
+
+This helped me understand how authentication is implemented in typical home Wi-Fi environments.
+
+40. Encryption Methods
+
+I learnt about wireless encryption and its role in protecting data transmitted over the air.
+
+I understood that encryption helps prevent attackers from easily reading intercepted wireless traffic.
+
+41. Authentication in the Enterprise
+
+I learnt that enterprise WLANs require stronger authentication mechanisms than basic home networks.
+
+I studied how enterprise wireless networks can use centralised authentication services to control user access.
+
+This showed me how organisations can manage wireless access more securely at scale.
+
+42. WPA3
+
+I learnt about Wi-Fi Protected Access 3 (WPA3) and its improvements over previous wireless security standards.
+
+I understood that modern wireless networks should use strong, up-to-date security mechanisms rather than relying on outdated protocols.
+
+43. Check Your Understanding – Secure WLANs
+
+I completed an assessment covering wireless authentication, encryption, enterprise security and modern WLAN security standards.
+
+Summary of Days Twenty-Six to Thirty-Three
+
+Over days twenty-six to thirty-three, I gained a comprehensive understanding of Wireless Local Area Networks and their security requirements. I learnt how wireless networks operate, the purpose of access points and wireless NICs, the role of 802.11 standards, radio frequencies, BSS and ESS, CSMA/CA, and wireless client association.
+
+I also learnt about CAPWAP and centralised wireless management, including Split-MAC architecture, DTLS encryption and FlexConnect. In addition, I studied WLAN channel management and learnt why proper planning is necessary to minimise interference and maintain reliable wireless performance.
+
+The security section was particularly important because I learnt about wireless threats such as DoS attacks, rogue access points and Man-in-the-Middle attacks, as well as security measures including authentication, encryption, enterprise authentication and WPA3.
+
+Overall, these eight days expanded my networking knowledge from traditional wired infrastructure into wireless networking. I now have a stronger understanding of how WLANs are designed, deployed, managed, secured and maintained, which is an important skill for a cybersecurity and networking practitioner.
