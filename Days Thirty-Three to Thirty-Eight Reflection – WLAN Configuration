@@ -1,0 +1,324 @@
+During Days 33 to 38, I progressed from understanding WLAN concepts to actually configuring, managing and troubleshooting wireless networks. This module gave me practical experience with wireless routers, Wireless LAN Controllers (WLCs), WLANs, VLANs, DHCP, NAT, QoS, port forwarding, RADIUS authentication and WLAN troubleshooting. I also used Cisco Packet Tracer to practise the configurations in simulated network environments.
+
+13.1 Remote Site WLAN Configuration
+13.1.1 Video – Configure a Wireless Network
+
+I watched the video demonstrating how to configure a wireless network from the initial setup through to client connectivity. This helped me understand the sequence involved in deploying a wireless network, including configuring the router, wireless settings, addressing and security.
+
+I learnt that a wireless network needs to be configured systematically. It is not enough to simply enable Wi-Fi. The network addressing, SSID, authentication, DHCP and other services must work together.
+
+13.1.2 The Wireless Router
+
+I learnt about the role of a wireless router in a small or remote-site network. A wireless router can combine several functions in one device, including:
+
+Routing
+Switching
+Wireless access
+DHCP
+NAT
+Basic firewall functions
+Internet connectivity
+
+This showed me why wireless routers are commonly used in small offices and home networks.
+
+13.1.3 Log in to the Wireless Router
+
+I practised accessing the wireless router's management interface. I learnt how administrators can use the management interface to configure network settings, wireless settings, security and other services.
+
+This reinforced the importance of securing administrative access because anyone who gains unauthorised access to the router could potentially change important network configurations.
+
+13.1.4 Basic Network Setup
+
+I learnt how to configure the basic network parameters of a wireless router, including the LAN address and DHCP settings.
+
+I also learnt that the router's LAN configuration determines how local devices communicate, while DHCP can automatically provide clients with IP addresses and other network information.
+
+13.1.5 Basic Wireless Setup
+
+I configured the basic wireless settings, including the SSID, wireless security and other wireless parameters.
+
+I learnt that the SSID identifies the wireless network to users, while authentication and encryption help protect the network from unauthorised access.
+
+I also understood that simply hiding an SSID should not be considered a strong security measure. Proper authentication and encryption are much more important.
+
+13.1.6 Configure a Wireless Mesh Network
+
+I learnt about wireless mesh networking and how multiple wireless devices can work together to extend wireless coverage.
+
+Instead of relying on one access point to cover an entire area, mesh devices can provide additional coverage while maintaining connectivity between different parts of the network.
+
+This was useful for understanding how wireless networks can be expanded when a single access point is not sufficient.
+
+13.1.7 NAT for IPv4
+
+I learnt how Network Address Translation (NAT) allows devices using private IPv4 addresses to communicate with external networks through a public address.
+
+I understood the basic difference between:
+
+Inside/local private addresses
+Outside/public addresses
+
+NAT is particularly important in small networks because many internal devices can share a public IPv4 address when accessing the Internet.
+
+13.1.8 Quality of Service
+
+I studied Quality of Service (QoS) and how it can be used to manage network traffic.
+
+I learnt that not all network traffic has the same requirements. Applications such as voice and video can be affected significantly by delay, jitter and packet loss.
+
+QoS can therefore be used to prioritise important traffic and help provide a more consistent user experience when network resources are limited.
+
+13.1.9 Port Forwarding
+
+I learnt how port forwarding can allow traffic from an external network to reach a specific device or service inside a private network.
+
+For example, a router can be configured so that traffic arriving on a particular external port is forwarded to a particular internal IP address and port.
+
+I also learnt that port forwarding should be configured carefully because exposing internal services to external networks can increase security risks.
+
+13.1.10 Packet Tracer – Configure a Wireless Network
+
+I applied the concepts in Cisco Packet Tracer by building and configuring a wireless network.
+
+I practised configuring the wireless router, network addressing, wireless settings and client connectivity. I then tested whether the connected devices could communicate correctly.
+
+This exercise helped me move from theoretical knowledge to practical configuration.
+
+13.1.11 Lab – Configure a Wireless Network
+
+I completed the wireless network configuration lab and used the knowledge from the previous topics in a more practical environment.
+
+The lab helped me understand the relationship between the wireless router, IP addressing, DHCP, wireless clients and network connectivity.
+
+13.2 Configure a Basic WLAN on the WLC
+13.2.1 Video – Configure a Basic WLAN on the WLC
+
+I watched the demonstration on configuring a WLAN using a Wireless LAN Controller (WLC).
+
+This introduced me to the idea of centrally managing wireless networks rather than configuring every access point independently.
+
+13.2.2 WLC Topology
+
+I studied the topology of a network using a WLC.
+
+I learnt that the WLC can centrally manage access points and WLAN configurations. This provides a more organised approach when a network contains multiple access points.
+
+I also understood how wireless clients, access points, the WLC and the rest of the network communicate with one another.
+
+13.2.3 Log in to the WLC
+
+I practised accessing the WLC management interface.
+
+I learnt how administrators can use the WLC interface to monitor and configure wireless infrastructure. This includes managing WLANs, access points and security-related settings.
+
+13.2.4 View AP Information
+
+I learnt how to view information about connected Access Points (APs) from the WLC.
+
+The information available can help an administrator understand which access points are connected and how they are operating.
+
+This is important when managing larger wireless deployments because the administrator needs visibility of the wireless infrastructure.
+
+13.2.5 Advanced Settings
+
+I explored the advanced settings available on the WLC.
+
+This helped me understand that enterprise wireless configuration involves more than simply creating an SSID. Administrators can control different aspects of WLAN operation, security and network connectivity through the controller.
+
+13.2.6 Configure a WLAN
+
+I configured a basic WLAN on the WLC.
+
+I learnt how to create a WLAN, assign an SSID and configure the necessary settings for wireless clients to connect.
+
+I also understood how the WLAN configuration on the controller is associated with the access points managed by the WLC.
+
+13.2.7 Packet Tracer – Configure a Basic WLAN on the WLC
+
+I used Packet Tracer to practise configuring a basic WLAN through a WLC.
+
+I configured the wireless infrastructure and tested client connectivity. This gave me practical experience with centralised WLAN management and helped reinforce the configuration process.
+
+13.3 Configure a WPA2 Enterprise WLAN on the WLC
+
+This section introduced me to a more advanced wireless security configuration using WPA2 Enterprise.
+
+13.3.1 Video – Define an SNMP and RADIUS Server on the WLC
+
+I watched the demonstration showing how SNMP and RADIUS server information can be configured on a WLC.
+
+This introduced me to the role of external services in managing and securing enterprise wireless networks.
+
+13.3.2 SNMP and RADIUS
+
+I learnt the difference between SNMP and RADIUS.
+
+SNMP, or Simple Network Management Protocol, can be used to monitor and manage network devices.
+
+RADIUS, or Remote Authentication Dial-In User Service, can provide centralised authentication and authorisation services.
+
+I learnt that RADIUS is particularly important in enterprise wireless environments because users can authenticate against a central server instead of relying on one shared wireless password.
+
+13.3.3 Configure SNMP Server Information
+
+I practised configuring SNMP server information on the WLC.
+
+This helped me understand how network infrastructure can communicate with a central monitoring or management system.
+
+13.3.4 Configure RADIUS Server Information
+
+I configured the RADIUS server information on the WLC.
+
+I learnt how the WLC can communicate with a RADIUS server to handle authentication for wireless users.
+
+This was an important step towards understanding enterprise-level wireless security.
+
+13.3.5 Video – Configure a VLAN for a New WLAN
+
+I watched the demonstration showing how a VLAN can be associated with a new WLAN.
+
+I learnt that different WLANs can be mapped to different VLANs. This allows wireless traffic to be logically separated according to the requirements of the organisation.
+
+13.3.6 Topology with VLAN 5 Addressing
+
+I studied a topology using VLAN 5 and examined how IP addressing was applied to the network.
+
+This helped me understand the relationship between VLANs, IP subnets, wireless networks and the underlying network infrastructure.
+
+13.3.7 Configure a New Interface
+
+I practised configuring a new interface on the WLC for the WLAN.
+
+I learnt that the interface can provide the connection between the WLAN and the appropriate VLAN within the wired network.
+
+13.3.8 Video – Configure a DHCP Scope
+
+I watched the demonstration of configuring a DHCP scope for the wireless network.
+
+This showed me how the network can automatically provide IP addressing information to wireless clients.
+
+13.3.9 Configure a DHCP Scope
+
+I configured a DHCP scope and learnt how to define the network from which client addresses would be allocated.
+
+I also understood the importance of providing clients with the correct addressing information, including the appropriate default gateway and other required network parameters.
+
+13.3.10 Video – Configure a WPA2 Enterprise WLAN
+
+I watched the demonstration of configuring a WPA2 Enterprise WLAN.
+
+This helped me understand the complete process of combining the WLC, WLAN, VLAN, DHCP and RADIUS components into one working wireless authentication environment.
+
+13.3.11 Configure a WPA2 Enterprise WLAN
+
+I configured a WPA2 Enterprise WLAN using the WLC and RADIUS authentication.
+
+The major lesson I took from this exercise was the difference between enterprise authentication and a basic shared wireless password. With WPA2 Enterprise, users can authenticate individually through a central authentication service.
+
+This provides better control over user access in an organisational environment.
+
+13.3.12 Packet Tracer – Configure a WPA2 Enterprise WLAN on the WLC
+
+I implemented the WPA2 Enterprise configuration in Packet Tracer.
+
+I configured the required WLAN, VLAN, DHCP and RADIUS-related settings and then tested wireless client connectivity.
+
+This was one of the more advanced wireless exercises I completed because several network services had to work together correctly.
+
+13.4 Troubleshoot WLAN Issues
+
+The final section focused on troubleshooting. This was particularly useful because configuring a network is only part of a network administrator's job. I also need to be able to identify and resolve problems when the network does not operate as expected.
+
+13.4.1 Troubleshooting Approaches
+
+I learnt different approaches to troubleshooting WLAN problems.
+
+Rather than changing random settings, I learnt to work systematically by:
+
+Identifying the symptoms.
+Checking the physical and wireless connections.
+Checking configuration settings.
+Checking IP addressing and DHCP.
+Checking authentication and security settings.
+Testing connectivity.
+Making one change at a time.
+Verifying whether the problem has been resolved.
+
+This reinforced an important troubleshooting principle: I should isolate the problem before attempting to fix it.
+
+13.4.2 Wireless Client Not Connecting
+
+I learnt how to troubleshoot situations where a wireless client cannot connect to the WLAN.
+
+Possible areas to investigate include:
+
+Incorrect SSID
+Incorrect authentication credentials
+Wireless security configuration
+Client wireless adapter
+Signal coverage
+DHCP problems
+VLAN configuration
+Access point connectivity
+WLC configuration
+
+I learnt that the cause of a connection problem is not always the wireless client itself. The problem could exist anywhere between the client and the network service it is trying to reach.
+
+13.4.3 Troubleshooting When the Network Is Slow
+
+I learnt how to investigate slow WLAN performance.
+
+Possible causes include:
+
+Wireless interference
+Poor signal strength
+Too many connected clients
+Incorrect channel selection
+Network congestion
+Configuration problems
+Outdated equipment or firmware
+
+This connected directly with the earlier WLAN topics on radio frequencies and channel management. A wireless network can be operational but still provide poor performance if the wireless environment is badly configured.
+
+13.4.4 Updating Firmware
+
+I learnt about the importance of keeping network equipment firmware updated.
+
+Firmware updates can provide bug fixes, security improvements, stability improvements and support for newer features.
+
+However, I also learnt that firmware updates should be planned carefully. An administrator should verify compatibility, understand the update procedure and have a recovery plan before making changes to network infrastructure.
+
+13.4.5 Packet Tracer – Troubleshoot WLAN Issues
+
+I completed the Packet Tracer troubleshooting activity and applied the troubleshooting methods I had learnt.
+
+Instead of simply configuring a network from the beginning, I had to investigate an existing problem and identify what was preventing the WLAN from operating correctly.
+
+This helped develop my troubleshooting mindset and taught me to use evidence from the network configuration and connectivity tests rather than making assumptions.
+
+Overall Reflection – Days 33 to 38
+
+Days 33 to 38 were important because I moved from learning WLAN concepts to actually configuring and troubleshooting wireless networks.
+
+During this module, I learnt how to:
+
+Configure a wireless router.
+Configure basic wireless settings.
+Configure wireless mesh networks.
+Configure NAT for IPv4.
+Understand and apply QoS concepts.
+Configure port forwarding.
+Configure WLANs using a WLC.
+Manage and view access points through a WLC.
+Configure VLANs for WLANs.
+Configure DHCP scopes.
+Understand SNMP and RADIUS.
+Configure WPA2 Enterprise authentication.
+Troubleshoot wireless client connectivity.
+Investigate slow WLAN performance.
+Understand the importance of firmware updates.
+Use Packet Tracer to practise WLAN configuration and troubleshooting.
+
+The biggest lesson from this module was that wireless networking is closely connected to other areas of networking. A working WLAN can depend on correct VLANs, IP addressing, DHCP, authentication, routing, wireless security and physical connectivity.
+
+My practical work in Packet Tracer also strengthened my troubleshooting skills. When something did not work, I learnt to investigate the configuration step by step rather than simply rebuilding the network. This is helping me develop the habit of approaching networking problems logically and systematically.
