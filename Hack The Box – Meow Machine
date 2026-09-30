@@ -1,0 +1,164 @@
+Achievement
+
+I successfully completed the Meow machine on Hack The Box, gaining hands-on experience with basic network reconnaissance, service enumeration and unauthorised-access techniques within a controlled and authorised laboratory environment.
+
+Platform: Hack The Box
+Machine: Meow
+Status: Retired
+Difficulty: Very Easy
+XP Earned: 150 XP
+Completion Date: 30 September 2026
+
+View Achievement: https://labs.hackthebox.com/achievement/machine/3653565/394
+
+Overview
+
+The Meow machine provided a practical introduction to the penetration-testing workflow used when assessing an unfamiliar target.
+
+Rather than relying on automated exploitation alone, the exercise reinforced the importance of understanding the target environment first, identifying exposed services and then determining whether those services could provide an avenue for access.
+
+The machine was completed in Hack The Box's controlled training environment.
+
+Skills Demonstrated
+1. Network Reconnaissance
+
+The assessment began with reconnaissance of the target to establish:
+
+Whether the host was reachable
+Which network services were exposed
+Which ports were open
+What services were associated with those ports
+
+This reinforced the principle that enumeration should come before exploitation.
+
+2. Port and Service Enumeration
+
+I used network-scanning techniques to identify exposed services and gather information about the target.
+
+The enumeration process helped narrow the attack surface and determine which services required further investigation.
+
+Key concepts reinforced:
+
+TCP port scanning
+Service discovery
+Attack-surface identification
+Basic service enumeration
+Interpreting scan results
+3. Service Analysis
+
+After identifying the available services, I investigated the exposed functionality to determine whether it could be abused to obtain access to the target.
+
+This highlighted an important penetration-testing principle:
+
+An open port is not automatically a vulnerability. The service behind it must be understood and assessed in context.
+
+4. Initial Access
+
+The identified weakness was used to obtain access to the target machine within the authorised Hack The Box environment.
+
+This demonstrated the progression from:
+
+Reconnaissance → Enumeration → Analysis → Exploitation → Access
+
+5. Post-Exploitation Validation
+
+After gaining access, I validated the level of access obtained and confirmed that the machine had been successfully compromised.
+
+This completed the practical attack chain against the target.
+
+Methodology
+
+The exercise followed a simplified penetration-testing methodology:
+
+Target Identification
+        ↓
+Reconnaissance
+        ↓
+Port Scanning
+        ↓
+Service Enumeration
+        ↓
+Vulnerability Analysis
+        ↓
+Initial Access
+        ↓
+Access Validation
+        ↓
+Documentation
+
+The key lesson was that successful penetration testing is not simply about finding exploits. It is about systematically reducing uncertainty about a target until a viable attack path becomes apparent.
+
+Key Lessons
+Enumeration Is Critical
+
+One of the strongest lessons from the machine was the importance of thorough enumeration.
+
+A penetration tester should avoid immediately jumping into exploitation. Understanding the target's exposed services provides the information required to make informed decisions.
+
+Simple Vulnerabilities Still Matter
+
+Real-world security failures are not always caused by sophisticated zero-day vulnerabilities.
+
+Poor configuration, unnecessary exposed services and weak access controls can provide attackers with straightforward paths into systems.
+
+Follow the Evidence
+
+Each stage of an assessment should be driven by information obtained from the previous stage.
+
+For example:
+
+Open Port
+   ↓
+Identify Service
+   ↓
+Understand Service
+   ↓
+Investigate Weakness
+   ↓
+Test Attack Path
+
+This prevents random trial-and-error and creates a repeatable methodology.
+
+Tools and Technologies
+Hack The Box
+Nmap
+Linux
+TCP/IP networking
+Network reconnaissance techniques
+Service enumeration
+Basic penetration-testing methodology
+Professional Relevance
+
+Although Meow is an introductory machine, the methodology exercised here forms part of a much larger penetration-testing workflow.
+
+The same fundamental process can be expanded into more advanced assessments involving:
+
+Web application penetration testing
+Infrastructure security assessments
+Privilege escalation
+Active Directory attacks
+Vulnerability research
+Red-team operations
+Incident-response investigation
+
+The objective is therefore not simply to collect completed machines, but to build a documented record of practical cybersecurity capability.
+
+Evidence
+
+Hack The Box achievement confirming successful completion:
+
+Meow – Pwned
+
+XP: 150
+Date: 30 September 2026
+
+Achievement:
+https://labs.hackthebox.com/achievement/machine/3653565/394
+
+Reflection
+
+Completing Meow reinforced a fundamental principle of offensive security:
+
+Do not attack what you do not understand. Enumerate first, analyse the evidence, identify the attack surface and then test the most relevant attack path.
+
+This machine represents another practical step in my cybersecurity learning journey, particularly in developing the reconnaissance and enumeration discipline required for more advanced penetration-testing labs.
