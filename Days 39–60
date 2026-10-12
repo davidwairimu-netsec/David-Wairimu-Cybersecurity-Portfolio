@@ -1,0 +1,116 @@
+Module 14: Routing Concepts and Module 15: IP Static Routing
+
+This part of my CCNA learning journey focuses on routing and how routers move packets between different networks. I am working through the concepts in Cisco's networking curriculum and putting what I learn into practice using Cisco Packet Tracer.
+
+The aim is to understand how routers make forwarding decisions, how routing tables work, and how to configure static routes for different networking scenarios. I am documenting my progress, practical exercises, configuration commands, challenges, and lessons learnt along the way.
+
+Module 14: Routing Concepts
+
+14.0 Introduction
+
+An introduction to routing concepts and the role routers play in moving data between networks.
+
+14.1 Path Determination
+
+Understanding how routers determine the best path for forwarding packets towards their destinations.
+
+14.1.1 Two Functions of a Router: Understanding the router's role in selecting paths and forwarding packets.
+
+14.1.2 Router Functions Example: Exploring how a router processes packets and makes forwarding decisions.
+
+14.1.3 Best Path Equals Longest Match: Understanding how longest-prefix matching helps a router select the most specific matching route.
+
+14.1.4 IPv4 Address Longest Match Example: Applying longest-prefix matching to IPv4 routing entries.
+
+14.1.5 IPv6 Address Longest Match Example: Applying longest-prefix matching to IPv6 routing entries.
+
+14.1.6 Build the Routing Table: Understanding how routers learn and maintain routes to destination networks.
+
+14.1.7 Check Your Understanding: Path Determination: Reviewing the key concepts involved in path selection.
+
+14.2 Packet Forwarding
+
+Exploring how routers receive packets, examine destination addresses, consult routing information, and forward packets towards their destinations.
+
+14.3 Basic Router Configuration Review
+
+Revisiting basic router configuration, interface addressing, interface activation, and verification commands.
+
+14.4 IP Routing Table
+
+Learning how to read and interpret routing tables, identify route sources, and understand how routers use routing entries to make forwarding decisions.
+
+14.5 Static and Dynamic Routing
+
+Comparing manually configured static routes with routes learned through dynamic routing protocols, including their differences, advantages, and practical uses.
+
+14.6 Module Practice and Quiz
+
+Reviewing the module content and testing my understanding of routing concepts, path determination, packet forwarding, and routing tables.
+
+Module 15: IP Static Routing
+
+15.1 Static Routes
+
+Understanding static routing, how static routes work, and when manually configured routes are useful.
+
+15.2 Configure IP Static Routes
+
+Practising the configuration of static routes to direct traffic towards specific destination networks.
+
+15.3 Configure IP Default Static Routes
+
+Learning how to configure a default static route for destinations that do not have a more specific matching route in the routing table.
+
+15.4 Configure Floating Static Routes
+
+Configuring backup static routes with a higher administrative distance so they can be used when the preferred route becomes unavailable.
+
+15.5 Configure Static Host Routes
+
+Learning how to configure routes for individual destination host addresses rather than entire networks.
+
+15.6 Module Practice and Quiz
+
+Reviewing static routing concepts, practising configuration commands, verifying route selection, and testing connectivity.
+
+Practical Labs and Documentation
+
+Throughout these modules, I use Cisco Packet Tracer to reinforce the concepts through practical network configurations and troubleshooting exercises.
+
+Where applicable, I document:
+
+Network topology and addressing schemes.
+
+Router interface and routing configurations.
+
+Static, default, floating, and host route configuration.
+
+Routing table inspection and verification commands.
+
+Connectivity testing and troubleshooting.
+
+Configuration errors encountered and how I resolved them.
+
+Key lessons learnt from each exercise.
+
+Learning Objectives
+
+By the end of these modules, my aim is to be able to:
+
+Explain how routers determine the best path to a destination.
+
+Apply longest-prefix matching to IPv4 and IPv6 routing scenarios.
+
+Interpret routing tables and understand route selection.
+
+Explain the packet-forwarding process.
+
+Distinguish between static and dynamic routing.
+
+Configure and verify static routes on Cisco routers.
+
+Configure default, floating, and static host routes.
+
+Troubleshoot basic routing and connectivity problems.
+
