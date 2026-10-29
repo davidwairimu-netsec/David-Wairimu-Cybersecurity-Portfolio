@@ -1,0 +1,214 @@
+# Packet Tracer Lab: Configure CDP, LLDP, and NTP
+
+## Overview
+
+This repository documents my completion of the Cisco Packet Tracer activity **"Configure CDP, LLDP, and NTP."** The lab involved discovering an undocumented network topology, configuring discovery protocols (CDP and LLDP) with directional control, and setting up NTP synchronization on a router.
+
+**Final Score: 100%** ✅
+
+---
+
+## Lab Objectives
+
+- Configure CDP to run globally on a device
+- Disable CDP on device interfaces where necessary
+- Configure LLDP to run globally on a device
+- Configure LLDP to send and receive messages according to requirements
+- Configure a router to use an NTP server
+
+---
+
+## Topology Summary
+
+| Device | Role | Key Interfaces |
+|---|---|---|
+| HQ | Router | G0/0/0 (192.168.1.1/24), G0/0/1 (192.168.2.1/24), S0/1/0 (192.168.3.1/30) |
+| Branch | Router | G0/0/0 (192.168.1.2), S0/1/0 (192.168.3.2/30) |
+| HQ-SW-1 | Access Switch | Fa0/24 (uplink), Gig0/1 (trunk) |
+| HQ-SW-2 | Access Switch | Gig0/1 (uplink), Fa0/1 (access) |
+| BR-SW-1 | Branch Switch | 192.168.4.250 |
+| BR-SW-2 | Branch Switch | 192.168.4.253 |
+| BR-SW-3 | Branch Switch | 192.168.4.254 |
+| NTP Server | Time Source | 192.168.1.254 |
+
+---
+
+## What I Completed
+
+### 1. LLDP Configuration (HQ Router + HQ Switches)
+
+**HQ Router:**
+- Disabled CDP globally (`no cdp run`)
+- Enabled LLDP globally (`lldp run`)
+- Configured G0/0/0 and G0/0/1 to **receive-only** LLDP (`no lldp transmit` + `lldp receive`)
+
+**HQ-SW-1 and HQ-SW-2:**
+- Disabled CDP globally
+- Enabled LLDP globally
+- Configured uplinks to **send-only** LLDP (`no lldp receive` + `lldp transmit`)
+- Disabled LLDP completely on in-use access ports (`no lldp transmit` + `no lldp receive`)
+
+**Verification:** `show lldp neighbors` on HQ confirmed both switches were discovered, proving the one-way LLDP path worked.
+
+### 2. CDP Configuration (Branch Router + Branch Switches)
+
+- Enabled CDP globally on the Branch router (`cdp run`)
+- Discovered the three Branch switch management IPs via `show cdp neighbors detail`
+- SSH'd into each Branch switch (no CLI access by clicking)
+- Disabled CDP on in-use access ports only (`no cdp enable` on Fa0/1 for BR-SW-2 and BR-SW-3)
+- BR-SW-1 had no access ports in use (all connected ports were trunks) — no configuration needed
+
+### 3. NTP Configuration (HQ Router)
+
+```cisco
+ntp server 192.168.1.254
+```
+
+**Verification:**
+```
+Clock is synchronized, stratum 2, reference is 192.168.1.254
+```
+
+---
+
+## Challenges I Encountered and How I Solved Them
+
+### Challenge 1: Placeholder Syntax Errors
+
+**Problem:** I copied command templates containing bracketed placeholders like `interface [uplink-to-HQ-interface]` directly into the CLI, which produced `% Invalid input detected at '^' marker`.
+
+**Root Cause:** Cisco IOS does not recognize square-bracket placeholders — they are documentation conventions, not valid syntax.
+
+**Solution:** Used `show cdp neighbors` and `show interfaces status` to discover the actual interface names before configuring anything.
+
+**Lesson Learned:** Always verify actual interface names with show commands before applying configuration templates.
+
+---
+
+### Challenge 2: CDP Disabled Too Early — Lost Discovery Method
+
+**Problem:** After running `no cdp run` on HQ-SW-1, `show cdp neighbors` returned `% CDP is not enabled`, leaving me without a way to discover the topology.
+
+**Root Cause:** I disabled CDP before recording the neighbor information, closing the door I needed to walk through.
+
+**Solution:** Fell back to LLDP (`show lldp neighbors`) after enabling `lldp run` on the switch. This still allowed me to identify uplink interfaces.
+
+**Lesson Learned:** Discovery protocols should be used to document the topology before being disabled. In production, always capture `show cdp neighbors detail` output before making changes.
+
+---
+
+### Challenge 3: `show lldp interface` Not Supported in Packet Tracer
+
+**Problem:** Running `show lldp interface` on HQ-SW-1 and HQ-SW-2 returned `% Invalid input detected at '^' marker`, even though the command is valid on real Cisco IOS.
+
+**Root Cause:** Packet Tracer is a simulator that only supports a subset of IOS commands. `show lldp interface` is not implemented in this version.
+
+**Solution:** Verified LLDP direction rules indirectly — `show lldp neighbors` on the HQ router confirmed the switches were transmitting, which proved the send-only configuration on the switch side was correct.
+
+**Lesson Learned:** Simulators have command limitations. When a verification command fails, find an alternative verification path (e.g., checking the neighbor from the opposite side of the link).
+
+---
+
+### Challenge 4: Password Prompt Confusion During SSH
+
+**Problem:** After typing `enable` during an SSH session, the `Password:` prompt appeared three times, then returned `% Bad secrets`. On a later attempt, I reached `BR-SW-1#` but then typed the password again at the privileged prompt, causing the switch to try resolving it as a hostname (`Translating "SW1EnaAccess#"...domain server`).
+
+**Root Cause:** Two issues combined:
+1. Pressing Enter on an empty `Password:` line counts as a failed attempt in Packet Tracer.
+2. I did not recognize that I had already reached privileged mode (`#` prompt) and typed the password as a command.
+
+**Solution:** Typed the enable secret immediately at the first `Password:` prompt without pressing Enter first. Once at `BR-SW-1#`, proceeded directly to configuration commands.
+
+**Lesson Learned:** The `#` prompt means you are already in privileged EXEC mode — do not type the password again. In Packet Tracer SSH sessions, type the password immediately when prompted.
+
+---
+
+### Challenge 5: NTP Appeared Unsynchronized After Configuration
+
+**Problem:** After running `ntp server 192.168.1.254`, `show ntp status` still showed `Clock is unsynchronized, stratum 16, no reference clock`.
+
+**Root Cause:** NTP requires multiple poll cycles to converge. The `reach` value in `show ntp associations` was still low (1), meaning HQ had not yet received enough responses from the server.
+
+**Solution:** Clicked **Fast Forward Time** several times and re-checked. The `reach` value climbed, the `*` prefix appeared next to `192.168.1.254`, and `show ntp status` reported `synchronized, stratum 2`.
+
+**Lesson Learned:** NTP is not instantaneous. In Packet Tracer, use Fast Forward Time to accelerate convergence. The `*` prefix in `show ntp associations` is the definitive indicator of sync.
+
+---
+
+### Challenge 6: 96% Score — The Missing 4%
+
+**Problem:** After completing all visible configurations, the Packet Tracer assessment reported **96% completion** instead of 100%.
+
+**Root Cause:** The grading script expected LLDP to be **completely disabled** on **HQ-SW-1 Fa0/24**, even though `show interfaces status` displayed it as a trunk (`connected`, VLAN `trunk`). I had initially configured it as send-only, treating it as an uplink.
+
+**Solution:** Disabled LLDP entirely on HQ-SW-1 Fa0/24:
+```cisco
+interface FastEthernet0/24
+ no lldp transmit
+ no lldp receive
+```
+
+**Result:** Score jumped to **100%**.
+
+**Lesson Learned:** Packet Tracer's grading is literal and does not always match what `show interfaces status` implies. When the score is not 100%, the assessment script may be checking for a specific configuration that differs from your interpretation of the topology. Match the answer key exactly when in doubt.
+
+---
+
+## Final Verification
+
+| Check | Command | Result |
+|---|---|---|
+| CDP disabled on HQ | `show cdp` | `CDP is not enabled` ✅ |
+| LLDP enabled on HQ | `show lldp` | `LLDP is enabled` ✅ |
+| HQ sees both switches | `show lldp neighbors` | HQ-SW-1 and HQ-SW-2 listed ✅ |
+| CDP enabled on Branch | `show cdp` | Sending CDP packets every 60 seconds ✅ |
+| CDP disabled on BR-SW-2/3 access ports | `show cdp interface` | Fa0/1 not sending ✅ |
+| NTP synchronized | `show ntp status` | `synchronized, stratum 2, reference is 192.168.1.254` ✅ |
+
+---
+
+## Key Takeaways
+
+1. **CDP and LLDP are independent protocols.** Disabling one does not affect the other. Both must be configured separately.
+2. **Global vs. interface-level commands matter.** `no cdp run` disables CDP entirely; `no cdp enable` disables it only on a specific interface.
+3. **LLDP directional control** is achieved with `lldp transmit` and `lldp receive` at the interface level. The router receives, the switches send — creating a one-way discovery path that limits information exposure.
+4. **Document before you disable.** Always capture neighbor information before turning off discovery protocols.
+5. **Simulators have limitations.** Packet Tracer does not support every IOS command. Find alternative verification paths when a command is rejected.
+6. **Packet Tracer grading is literal.** A 96% score usually means one specific configuration item is missing or mismatched. Check the assessment output carefully and compare against the answer key.
+7. **NTP takes time.** Use Fast Forward Time and verify with both `show ntp status` and `show ntp associations` (look for the `*` prefix).
+
+---
+
+## Commands Reference
+
+```cisco
+! CDP
+cdp run                          ! Enable CDP globally
+no cdp run                       ! Disable CDP globally
+no cdp enable                    ! Disable CDP on an interface
+show cdp neighbors               ! View CDP neighbors
+show cdp neighbors detail        ! View detailed CDP neighbor info
+show cdp interface               ! View CDP status per interface
+
+! LLDP
+lldp run                         ! Enable LLDP globally
+lldp transmit                    ! Enable LLDP transmit on interface
+no lldp transmit                 ! Disable LLDP transmit on interface
+lldp receive                     ! Enable LLDP receive on interface
+no lldp receive                  ! Disable LLDP receive on interface
+show lldp                        ! View global LLDP status
+show lldp neighbors              ! View LLDP neighbors
+
+! NTP
+ntp server <ip>                  ! Configure NTP server
+show ntp status                  ! View NTP sync status
+show ntp associations            ! View NTP peer associations
+```
+
+---
+
+## Conclusion
+
+This lab reinforced the importance of understanding discovery protocol behavior at both the global and interface level, the directional control available with LLDP, and the practical realities of working with a network simulator. The 96% → 100% debugging process was particularly valuable — it taught me that grading scripts and visual interface status do not always agree, and that matching the exact expected configuration is sometimes necessary even when the topology appears to suggest otherwise.
+
+**Final result: 100% completion.** ✅
